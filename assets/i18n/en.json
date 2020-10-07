@@ -1,0 +1,125 @@
+{
+  "menu": {
+    "news": {
+      "title": "News",
+      "link": "https://www.pubg.com/news/"
+    },
+    "community": {
+      "title": "Community",
+      "submenu": {
+        "pubg_api": {
+          "title": "PUBG API",
+          "link": "https://developer.pubg.com/"
+        },
+        "facebook": {
+          "title": "Facebook",
+          "link": "https://www.facebook.com/PUBG/"
+        },
+        "facebook_group": {
+          "title": "Facebook Group",
+          "link": "http://bit.ly/PUBGTWGROUP"
+        },
+        "twitter": {
+          "title": "Twitter",
+          "link": "https://www.twitter.com/PUBG"
+        },
+        "youtube": {
+          "title": "Youtube",
+          "link": "https://www.youtube.com/pubg"
+        },
+        "twitch": {
+          "title": "Twitch",
+          "link": "https://www.youtube.com/pubg"
+        },
+        "reddit": {
+          "title": "Reddit",
+          "link": "https://www.reddit.com/r/PUBATTLEGROUNDS/"
+        },
+        "instagram": {
+          "title": "Instagram",
+          "link": "https://www.instagram.com/pubg/"
+        },
+        "discord": {
+          "title": "Discord",
+          "link": "https://discordapp.com/invite/battlegrounds"
+        },
+        "passport": {
+          "title": "Passport 8.2 Sweepstakes",
+          "link": "https://accounts.pubg.com/rewards/sweepstakes"
+        },
+        "naver_cafe": {
+          "title": "Naver Cafe",
+          "link": "https://cafe.naver.com/playbattlegrounds"
+        },
+        "pubg_partner": {
+          "title": "PUBG PARTNER",
+          "link": "https://bit.ly/2Cq6WmP"
+        }
+      }
+    },
+    "season": {
+      "title": "Season 9",
+      "link": "https://pass.pubg.com/"
+    },
+    "product": {
+      "title": "Product",
+      "link": ""
+    },
+    "support": {
+      "title": "Support",
+      "link": ""
+    },
+    "careers": {
+      "title": "Careers",
+      "link": ""
+    },
+    "esports": {
+      "title": "esports",
+      "elink": "https://www.pubgesports.com/"
+    }
+  }, 
+  "buynow": {
+    "steam": {
+      "title": "Steam",
+      "link": "https://store.steampowered.com/app/1349770/Survivor_Pass_Payback/"
+    },
+    "xbox": {
+      "title": "Xbox One",
+      "link": "https://www.microsoft.com/store/productid/9p4q3ht7242j"
+    },
+    "ps4": {
+      "title": "PS4",
+      "link": "https://store.playstation.com/en-us/product/UP5082-CUSA14081_00-PAYBCK0000000000"
+    },
+    "stadia": {
+      "title": "STADIA",
+      "link": "https://stadia.com/link/9sRuzcJ5QVHr8JhEA"
+    },
+    "kakao": {
+      "title": "Kakao",
+      "link": "http://pubg.game.daum.net/pubg/shop/package/index.daum"
+    }
+  }, 
+  "footer": {
+    "privacy_policy": {
+      "title": "Privacy Policy",
+      "link": "https://www.pubg.com/privacy/"
+    },
+    "terms_service": {
+      "title": "Terms of Service",
+      "link": "https://www.pubg.com/terms-of-service/"
+    },
+    "rules_conduct": {
+      "title": "Rules of Conduct",
+      "link": "https://www.pubg.com/rules-of-conduct/"
+    },
+    "eula": {
+      "title": "EULA",
+      "link": "https://www.pubg.com/eula/"
+    },
+    "player_created_content": {
+      "title": "Player-created Content",
+      "link": "https://www.pubg.com/player-created-content/"
+    }
+  }
+}
