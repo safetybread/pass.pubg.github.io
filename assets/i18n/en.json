@@ -121,5 +121,31 @@
       "title": "Player-created Content",
       "link": "https://www.pubg.com/player-created-content/"
     }
+  },
+  "section": {
+    "0": {
+      "title": "Discover Paramo"
+    },
+    "1": {
+      "title": "New Season 9"
+    },
+    "2": {
+      "title": "Survivor Pass: Highlands"
+    },
+    "3": {
+      "title": ""
+    },
+    "4": {
+      "title": "Survivor Pass: Highlands"
+    },
+    "5": {
+      "title": "And Claim Your Victory"
+    },
+    "6": {
+      "title": "Discover the endless possibilities of Paramo"
+    },
+    "7": {
+      "title": "Available At"
+    }
   }
 }

@@ -44,7 +44,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/* Reset styles and global styles */\n*:focus {\n  outline: 0 !important;\n}\nbody, h1, h2, h3, h4, h5, h6, ul, pre {\n  margin: 0;\n  padding: 0;\n}\nbody {\n  background: #000000;\n}\na {\n  text-decoration: none;\n  color: #888888;\n}\nul {\n  list-style: none;\n}\npre {\n  font-family: inherit;\n}\n.bg-theme {\n  background: #e54147;\n}", "",{"version":3,"sources":["webpack://src/styles.scss"],"names":[],"mappings":"AAAA,mCAAA;AAEA;EACE,qBAAA;AAAF;AAGA;EACE,SAAA;EACA,UAAA;AAAF;AAGA;EACE,mBAAA;AAAF;AAGA;EACE,qBAAA;EACA,cAAA;AAAF;AAGA;EACE,gBAAA;AAAF;AAGA;EACE,oBAAA;AAAF;AAGA;EACE,mBAAA;AAAF","sourcesContent":["/* Reset styles and global styles */\n\n*:focus {\n  outline: 0 !important;\n}\n\nbody, h1, h2, h3, h4, h5, h6, ul, pre {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background: #000000;\n}\n\na {\n  text-decoration: none;\n  color: #888888;\n}\n\nul {\n  list-style: none;\n}\n\npre {\n  font-family: inherit;\n}\n\n.bg-theme {\n  background: #e54147;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "/* Reset styles and global styles */\n*:focus {\n  outline: 0 !important;\n}\nbody, h1, h2, h3, h4, h5, h6, ul, pre, figure {\n  margin: 0;\n  padding: 0;\n}\nbody {\n  background: #000000;\n}\na {\n  text-decoration: none;\n  color: #888888;\n}\nul {\n  list-style: none;\n}\npre {\n  font-family: inherit;\n}\n.bg-theme {\n  background: #e54147;\n}", "",{"version":3,"sources":["webpack://src/styles.scss"],"names":[],"mappings":"AAAA,mCAAA;AAEA;EACE,qBAAA;AAAF;AAGA;EACE,SAAA;EACA,UAAA;AAAF;AAGA;EACE,mBAAA;AAAF;AAGA;EACE,qBAAA;EACA,cAAA;AAAF;AAGA;EACE,gBAAA;AAAF;AAGA;EACE,oBAAA;AAAF;AAGA;EACE,mBAAA;AAAF","sourcesContent":["/* Reset styles and global styles */\n\n*:focus {\n  outline: 0 !important;\n}\n\nbody, h1, h2, h3, h4, h5, h6, ul, pre, figure {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background: #000000;\n}\n\na {\n  text-decoration: none;\n  color: #888888;\n}\n\nul {\n  list-style: none;\n}\n\npre {\n  font-family: inherit;\n}\n\n.bg-theme {\n  background: #e54147;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -58,7 +58,7 @@ ___CSS_LOADER_EXPORT___.push([module.i, "/* Reset styles and global styles */\n*
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\u\ng-workspace\com-pubg-pass\src\styles.scss */"+EN/");
+module.exports = __webpack_require__(/*! C:\Users\u\ng-workspace\pass.pubg.com\src\styles.scss */"+EN/");
 
 
 /***/ }),

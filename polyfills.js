@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\u\ng-workspace\com-pubg-pass\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Users\u\ng-workspace\pass.pubg.com\src\polyfills.ts */"hN/g");
 
 
 /***/ }),
