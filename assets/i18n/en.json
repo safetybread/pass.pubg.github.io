@@ -1,125 +1,102 @@
 {
   "menu": {
     "news": {
-      "title": "News",
-      "link": "https://www.pubg.com/news/"
+      "title": "News"
     },
     "community": {
       "title": "Community",
       "submenu": {
         "pubg_api": {
-          "title": "PUBG API",
-          "link": "https://developer.pubg.com/"
+          "title": "PUBG API"
         },
         "facebook": {
-          "title": "Facebook",
-          "link": "https://www.facebook.com/PUBG/"
+          "title": "Facebook"
         },
         "facebook_group": {
-          "title": "Facebook Group",
-          "link": "http://bit.ly/PUBGTWGROUP"
+          "title": "Facebook Group"
         },
         "twitter": {
-          "title": "Twitter",
-          "link": "https://www.twitter.com/PUBG"
+          "title": "Twitter"
         },
         "youtube": {
-          "title": "Youtube",
-          "link": "https://www.youtube.com/pubg"
+          "title": "Youtube"
         },
         "twitch": {
-          "title": "Twitch",
-          "link": "https://www.youtube.com/pubg"
+          "title": "Twitch"
         },
         "reddit": {
-          "title": "Reddit",
-          "link": "https://www.reddit.com/r/PUBATTLEGROUNDS/"
+          "title": "Reddit"
         },
         "instagram": {
-          "title": "Instagram",
-          "link": "https://www.instagram.com/pubg/"
+          "title": "Instagram"
         },
         "discord": {
-          "title": "Discord",
-          "link": "https://discordapp.com/invite/battlegrounds"
+          "title": "Discord"
         },
         "passport": {
-          "title": "Passport 8.2 Sweepstakes",
-          "link": "https://accounts.pubg.com/rewards/sweepstakes"
+          "title": "Passport 8.2 Sweepstakes"
         },
         "naver_cafe": {
-          "title": "Naver Cafe",
-          "link": "https://cafe.naver.com/playbattlegrounds"
+          "title": "Naver Cafe"
         },
         "pubg_partner": {
-          "title": "PUBG PARTNER",
-          "link": "https://bit.ly/2Cq6WmP"
+          "title": "PUBG PARTNER"
         }
       }
     },
     "season": {
-      "title": "Season 9",
-      "link": "https://pass.pubg.com/"
+      "title": "Season 9"
     },
     "product": {
-      "title": "Product",
-      "link": ""
+      "title": "Product"
     },
     "support": {
-      "title": "Support",
-      "link": ""
+      "title": "Support"
     },
     "careers": {
-      "title": "Careers",
-      "link": ""
+      "title": "Careers"
     },
     "esports": {
-      "title": "esports",
-      "elink": "https://www.pubgesports.com/"
+      "title": "esports"
     }
   }, 
+  "login": "Login",
   "buynow": {
+    "title": "Buy Now",
     "steam": {
-      "title": "Steam",
-      "link": "https://store.steampowered.com/app/1349770/Survivor_Pass_Payback/"
+      "title": "Steam"
     },
     "xbox": {
-      "title": "Xbox One",
-      "link": "https://www.microsoft.com/store/productid/9p4q3ht7242j"
+      "title": "Xbox One"
     },
     "ps4": {
-      "title": "PS4",
-      "link": "https://store.playstation.com/en-us/product/UP5082-CUSA14081_00-PAYBCK0000000000"
+      "title": "PS4"
     },
     "stadia": {
-      "title": "STADIA",
-      "link": "https://stadia.com/link/9sRuzcJ5QVHr8JhEA"
+      "title": "STADIA"
     },
     "kakao": {
-      "title": "Kakao",
-      "link": "http://pubg.game.daum.net/pubg/shop/package/index.daum"
+      "title": "Kakao"
     }
   }, 
   "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "partner": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
     "privacy_policy": {
-      "title": "Privacy Policy",
-      "link": "https://www.pubg.com/privacy/"
+      "title": "Privacy Policy"
     },
     "terms_service": {
-      "title": "Terms of Service",
-      "link": "https://www.pubg.com/terms-of-service/"
+      "title": "Terms of Service"
     },
     "rules_conduct": {
-      "title": "Rules of Conduct",
-      "link": "https://www.pubg.com/rules-of-conduct/"
+      "title": "Rules of Conduct"
     },
     "eula": {
-      "title": "EULA",
-      "link": "https://www.pubg.com/eula/"
+      "title": "EULA"
     },
     "player_created_content": {
-      "title": "Player-created Content",
-      "link": "https://www.pubg.com/player-created-content/"
+      "title": "Player-created Content"
     }
   },
   "section": {
@@ -127,16 +104,24 @@
       "title": "Discover Paramo"
     },
     "1": {
-      "title": "New Season 9"
+      "title": "New Season 9",
+      "paragraph": {
+        "title": "G-Coin now live on PC",
+        "description": "We've just made in-game purchasing easier with the addition of G-Coin to PC! Starting now, purchases made in the PUBG store will pull from your refillable G-Coin wallet balance instead of requiring a cash transaction for each item. Even better, you can earn up to $5 worth of G-Coin by completing missions in Survivor Pass: Highlands, allowing you to choose your own reward from the PUBG Store. For more details on the switch to G-Coin, please visit pubg.com.",
+        "detail_view": "Detail View"
+      }
     },
     "2": {
-      "title": "Survivor Pass: Highlands"
+      "title": "Survivor Pass: Highlands",
+      "paragraph": {
+        "description": "Season 9 is here with an all new Survivor Pass! This shortened pass lasts for only 2 months, but also has a lower requirement of Level 50, letting you unlock all its great rewards faster! With the new Season comes a brand new seasonal map. Paramo lies surrounded by clouds in the highlands of a forgotten civilization, and comes with exciting new gameplay features such as Supply Helicopters, the Critical Response Kit, and Molten Lava from a live volcano! Paramo also features dynamic terrain, where areas change from match to match, giving you a new experience each time you play! Grab the Survivor Pass, discover the lost city of Paramo, and take on the Battlegrounds like never before!"
+      }
     },
     "3": {
       "title": ""
     },
     "4": {
-      "title": "Survivor Pass: Highlands"
+      "title": "Discover New Heights"
     },
     "5": {
       "title": "And Claim Your Victory"
@@ -147,5 +132,10 @@
     "7": {
       "title": "Available At"
     }
-  }
+  },
+  "type_a": "Type A",
+  "type_b": "Type B",
+  "type_c": "Type C",
+  "console_exclusive": "Console Exclusive",
+  "console_exclusive_items": "Console Exclusive Items"
 }

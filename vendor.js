@@ -2266,6 +2266,278 @@ function partition(predicate, thisArg) {
 
 /***/ }),
 
+/***/ "B1r6":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/ngx-youtube-player/__ivy_ngcc__/fesm2015/ngx-youtube-player.js ***!
+  \*************************************************************************************/
+/*! exports provided: NgxYoutubePlayerModule, YouTubePlayerRef, YouTubeRef, YoutubePlayerComponent, YoutubePlayerService, defaultSizes, win */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgxYoutubePlayerModule", function() { return NgxYoutubePlayerModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YouTubePlayerRef", function() { return YouTubePlayerRef; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YouTubeRef", function() { return YouTubeRef; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YoutubePlayerComponent", function() { return YoutubePlayerComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YoutubePlayerService", function() { return YoutubePlayerService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaultSizes", function() { return defaultSizes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "win", function() { return win; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "SQ23");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
+
+
+
+
+
+function win() {
+    return window;
+}
+function YouTubeRef() {
+    return win()['YT'];
+}
+function YouTubePlayerRef() {
+    return YouTubeRef().Player;
+}
+const defaultSizes = {
+    height: 270,
+    width: 367
+};
+let YoutubePlayerService = class YoutubePlayerService {
+    constructor(zone) {
+        this.zone = zone;
+        this.ytApiLoaded = false;
+        this.api = new rxjs__WEBPACK_IMPORTED_MODULE_2__["ReplaySubject"](1);
+        this.createApi();
+    }
+    loadPlayerApi(options) {
+        const doc = win().document;
+        if (!this.ytApiLoaded) {
+            this.ytApiLoaded = true;
+            const playerApiScript = doc.createElement('script');
+            playerApiScript.type = 'text/javascript';
+            playerApiScript.src = `${options.protocol}://www.youtube.com/iframe_api`;
+            doc.body.appendChild(playerApiScript);
+        }
+    }
+    setupPlayer(elementId, outputs, sizes, videoId = '', playerVars) {
+        const createPlayer = () => {
+            if (YouTubePlayerRef) {
+                this.createPlayer(elementId, outputs, sizes, videoId, playerVars);
+            }
+        };
+        this.api.subscribe(createPlayer);
+    }
+    play(player) {
+        player.playVideo();
+    }
+    pause(player) {
+        player.pauseVideo();
+    }
+    playVideo(media, player) {
+        const id = media.id.videoId ? media.id.videoId : media.id;
+        player.loadVideoById(id);
+        this.play(player);
+    }
+    isPlaying(player) {
+        // because YT is not loaded yet 1 is used - YT.PlayerState.PLAYING
+        const isPlayerReady = player && player.getPlayerState;
+        const playerState = isPlayerReady ? player.getPlayerState() : {};
+        const isPlayerPlaying = isPlayerReady
+            ? playerState !== YouTubeRef().PlayerState.ENDED &&
+                playerState !== YouTubeRef().PlayerState.PAUSED
+            : false;
+        return isPlayerPlaying;
+    }
+    createPlayer(elementId, outputs, sizes, videoId = '', playerVars = {}) {
+        const playerSize = {
+            height: sizes.height || defaultSizes.height,
+            width: sizes.width || defaultSizes.width
+        };
+        const ytPlayer = YouTubePlayerRef();
+        return new ytPlayer(elementId, Object.assign(Object.assign({}, playerSize), { events: {
+                onReady: (ev) => {
+                    this.zone.run(() => outputs.ready && outputs.ready.next(ev.target));
+                },
+                onStateChange: (ev) => {
+                    this.zone.run(() => outputs.change && outputs.change.next(ev));
+                }
+            }, playerVars,
+            videoId }));
+    }
+    toggleFullScreen(player, isFullScreen) {
+        let { height, width } = defaultSizes;
+        if (!isFullScreen) {
+            height = window.innerHeight;
+            width = window.innerWidth;
+        }
+        player.setSize(width, height);
+    }
+    // adpoted from uid
+    generateUniqueId() {
+        const len = 7;
+        return Math.random()
+            .toString(35)
+            .substr(2, len);
+    }
+    createApi() {
+        const onYouTubeIframeAPIReady = () => {
+            if (win()) {
+                this.api.next(YouTubeRef());
+            }
+        };
+        win()['onYouTubeIframeAPIReady'] = onYouTubeIframeAPIReady;
+    }
+};
+YoutubePlayerService.ɵfac = function YoutubePlayerService_Factory(t) { return new (t || YoutubePlayerService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
+YoutubePlayerService.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"])({ factory: function YoutubePlayerService_Factory() { return new YoutubePlayerService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); }, token: YoutubePlayerService, providedIn: "root" });
+YoutubePlayerService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]])
+], YoutubePlayerService);
+
+let YoutubePlayerComponent = class YoutubePlayerComponent {
+    constructor(playerService, elementRef, renderer) {
+        this.playerService = playerService;
+        this.elementRef = elementRef;
+        this.renderer = renderer;
+        this.videoId = '';
+        this.height = defaultSizes.height;
+        this.width = defaultSizes.width;
+        /**
+         * @description sets the protocol by the navigator object
+         * if there is no window, it sets a default http protocol
+         * unless the protocol is set from outside
+         */
+        this.protocol = this.getProtocol();
+        this.playerVars = {};
+        // player created and initialized - sends instance of the player
+        this.ready = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        // state change: send the YT event with its state
+        this.change = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+    }
+    ngAfterContentInit() {
+        const htmlId = this.playerService.generateUniqueId();
+        const playerSize = { height: this.height, width: this.width };
+        const container = this.renderer.selectRootElement('#yt-player-ngx-component');
+        this.renderer.setAttribute(container, 'id', htmlId);
+        this.playerService.loadPlayerApi({
+            protocol: this.protocol
+        });
+        this.playerService.setupPlayer(htmlId, {
+            change: this.change,
+            ready: this.ready
+        }, playerSize, this.videoId, this.playerVars);
+    }
+    getProtocol() {
+        const hasWindow = window && window.location;
+        const protocol = hasWindow
+            ? window.location.protocol.replace(':', '')
+            : 'http';
+        return protocol;
+    }
+};
+YoutubePlayerComponent.ɵfac = function YoutubePlayerComponent_Factory(t) { return new (t || YoutubePlayerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](YoutubePlayerService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"])); };
+YoutubePlayerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: YoutubePlayerComponent, selectors: [["youtube-player"]], inputs: { videoId: "videoId", height: "height", width: "width", protocol: "protocol", playerVars: "playerVars" }, outputs: { ready: "ready", change: "change" }, decls: 1, vars: 0, consts: [["id", "yt-player-ngx-component"]], template: function YoutubePlayerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "div", 0);
+    } }, encapsulation: 2, changeDetection: 0 });
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], YoutubePlayerComponent.prototype, "videoId", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], YoutubePlayerComponent.prototype, "height", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], YoutubePlayerComponent.prototype, "width", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
+], YoutubePlayerComponent.prototype, "protocol", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], YoutubePlayerComponent.prototype, "playerVars", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], YoutubePlayerComponent.prototype, "ready", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], YoutubePlayerComponent.prototype, "change", void 0);
+YoutubePlayerComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [YoutubePlayerService,
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"],
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"]])
+], YoutubePlayerComponent);
+
+var NgxYoutubePlayerModule_1;
+let NgxYoutubePlayerModule = NgxYoutubePlayerModule_1 = class NgxYoutubePlayerModule {
+    static forRoot() {
+        return {
+            ngModule: NgxYoutubePlayerModule_1,
+            providers: [YoutubePlayerService]
+        };
+    }
+};
+NgxYoutubePlayerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NgxYoutubePlayerModule });
+NgxYoutubePlayerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NgxYoutubePlayerModule_Factory(t) { return new (t || NgxYoutubePlayerModule)(); }, providers: [YoutubePlayerService], imports: [[]] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](YoutubePlayerService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }]; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](YoutubePlayerComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                selector: 'youtube-player',
+                template: `
+    <div id="yt-player-ngx-component"></div>
+  `
+            }]
+    }], function () { return [{ type: YoutubePlayerService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] }]; }, { videoId: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], height: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], width: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], protocol: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], playerVars: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], ready: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], change: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NgxYoutubePlayerModule, { declarations: [YoutubePlayerComponent], exports: [YoutubePlayerComponent] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NgxYoutubePlayerModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+        args: [{
+                declarations: [YoutubePlayerComponent],
+                imports: [],
+                providers: [YoutubePlayerService],
+                exports: [YoutubePlayerComponent]
+            }]
+    }], null, null); })();
+
+/*
+ * Public API Surface of ngx-youtube-player
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=ngx-youtube-player.js.map
+
+/***/ }),
+
 /***/ "BFxc":
 /*!*******************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/takeLast.js ***!
@@ -4590,62 +4862,6 @@ class InnerRefCountSubscription extends _Subscription__WEBPACK_IMPORTED_MODULE_1
 
 /***/ }),
 
-/***/ "OjaE":
-/*!*****************************************************************!*\
-  !*** ./node_modules/ngx-embed-video/__ivy_ngcc__/dist/index.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var ɵngcc0 = __webpack_require__(/*! @angular/core */ "fXoL");
-var ɵngcc1 = __webpack_require__(/*! @angular/common */ "ofXK");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(/*! @angular/core */ "fXoL");
-var common_1 = __webpack_require__(/*! @angular/common */ "ofXK");
-var embed_video_service_1 = __webpack_require__(/*! ./src/embed-video.service */ "kRGQ");
-__export(__webpack_require__(/*! ./src/embed-video.service */ "kRGQ"));
-var EmbedVideo = /** @class */ (function () {
-    function EmbedVideo() {
-    }
-    EmbedVideo_1 = EmbedVideo;
-    EmbedVideo.forRoot = function () {
-        return {
-            ngModule: EmbedVideo_1,
-            providers: [embed_video_service_1.EmbedVideoService]
-        };
-    };
-    var EmbedVideo_1;
-EmbedVideo.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: EmbedVideo });
-EmbedVideo.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function EmbedVideo_Factory(t) { return new (t || EmbedVideo)(); }, providers: [embed_video_service_1.EmbedVideoService], imports: [[common_1.CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(EmbedVideo, { imports: [ɵngcc1.CommonModule] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(EmbedVideo, [{
-        type: core_1.NgModule,
-        args: [{
-                imports: [common_1.CommonModule],
-                declarations: [],
-                exports: [],
-                providers: [embed_video_service_1.EmbedVideoService]
-            }]
-    }], function () { return []; }, null); })();
-    return EmbedVideo;
-}());
-exports.EmbedVideo = EmbedVideo;
-
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
 /***/ "OsX3":
 /*!*********************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/bufferTime.js ***!
@@ -5215,6 +5431,260 @@ class AsapScheduler extends _AsyncScheduler__WEBPACK_IMPORTED_MODULE_0__["AsyncS
     }
 }
 //# sourceMappingURL=AsapScheduler.js.map
+
+/***/ }),
+
+/***/ "SQ23":
+/*!*************************************************************************!*\
+  !*** ./node_modules/ngx-youtube-player/node_modules/tslib/tslib.es6.js ***!
+  \*************************************************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __createBinding(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
 
 /***/ }),
 
@@ -42436,221 +42906,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "observable", function() { return observable; });
 const observable = (() => typeof Symbol === 'function' && Symbol.observable || '@@observable')();
 //# sourceMappingURL=observable.js.map
-
-/***/ }),
-
-/***/ "kRGQ":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/ngx-embed-video/__ivy_ngcc__/dist/src/embed-video.service.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var ɵngcc0 = __webpack_require__(/*! @angular/core */ "fXoL");
-var ɵngcc1 = __webpack_require__(/*! @angular/common/http */ "tk/3");
-var ɵngcc2 = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(/*! @angular/core */ "fXoL");
-var http_1 = __webpack_require__(/*! @angular/common/http */ "tk/3");
-var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
-var operators_1 = __webpack_require__(/*! rxjs/operators */ "kU1M");
-var EmbedVideoService = /** @class */ (function () {
-    function EmbedVideoService(http, sanitizer) {
-        this.http = http;
-        this.sanitizer = sanitizer;
-        this.validYouTubeOptions = [
-            'default',
-            'mqdefault',
-            'hqdefault',
-            'sddefault',
-            'maxresdefault'
-        ];
-        this.validVimeoOptions = [
-            'thumbnail_small',
-            'thumbnail_medium',
-            'thumbnail_large'
-        ];
-        this.validDailyMotionOptions = [
-            'thumbnail_60_url',
-            'thumbnail_120_url',
-            'thumbnail_180_url',
-            'thumbnail_240_url',
-            'thumbnail_360_url',
-            'thumbnail_480_url',
-            'thumbnail_720_url',
-            'thumbnail_1080_url'
-        ];
-    }
-    EmbedVideoService.prototype.embed = function (url, options) {
-        var id;
-        url = new URL(url);
-        id = this.detectYoutube(url);
-        if (id) {
-            return this.embed_youtube(id, options);
-        }
-        id = this.detectVimeo(url);
-        if (id) {
-            return this.embed_vimeo(id, options);
-        }
-        id = this.detectDailymotion(url);
-        if (id) {
-            return this.embed_dailymotion(id, options);
-        }
-    };
-    EmbedVideoService.prototype.embed_youtube = function (id, options) {
-        options = this.parseOptions(options);
-        return this.sanitize_iframe('<iframe src="https://www.youtube.com/embed/'
-            + id + options.query + '"' + options.attr
-            + ' frameborder="0" allowfullscreen></iframe>');
-    };
-    EmbedVideoService.prototype.embed_vimeo = function (id, options) {
-        options = this.parseOptions(options);
-        return this.sanitize_iframe('<iframe src="https://player.vimeo.com/video/'
-            + id + options.query + '"' + options.attr
-            + ' frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
-    };
-    EmbedVideoService.prototype.embed_dailymotion = function (id, options) {
-        options = this.parseOptions(options);
-        return this.sanitize_iframe('<iframe src="https://www.dailymotion.com/embed/video/'
-            + id + options.query + '"' + options.attr
-            + ' frameborder="0" allowfullscreen></iframe>');
-    };
-    EmbedVideoService.prototype.embed_image = function (url, options) {
-        var id;
-        url = new URL(url);
-        id = this.detectYoutube(url);
-        if (id) {
-            return this.embed_youtube_image(id, options);
-        }
-        id = this.detectVimeo(url);
-        if (id) {
-            return this.embed_vimeo_image(id, options);
-        }
-        id = this.detectDailymotion(url);
-        if (id) {
-            return this.embed_dailymotion_image(id, options);
-        }
-    };
-    EmbedVideoService.prototype.embed_youtube_image = function (id, options) {
-        if (typeof options === 'function') {
-            options = {};
-        }
-        options = options || {};
-        options.image = this.validYouTubeOptions.indexOf(options.image) > 0 ? options.image : 'default';
-        var src = 'https://img.youtube.com/vi/' + id + '/' + options.image + '.jpg';
-        var result = {
-            link: src,
-            html: '<img src="' + src + '"/>'
-        };
-        return new Promise(function (resolve) {
-            resolve(result);
-        });
-    };
-    EmbedVideoService.prototype.embed_vimeo_image = function (id, options) {
-        if (typeof options === 'function') {
-            options = {};
-        }
-        options = options || {};
-        options.image = this.validVimeoOptions.indexOf(options.image) >= 0 ? options.image : 'thumbnail_large';
-        return this.http.get('https://vimeo.com/api/v2/video/' + id + '.json').pipe(operators_1.map(function (res) {
-            return {
-                'link': res[0][options.image],
-                'html': '<img src="' + res[0][options.image] + '"/>'
-            };
-        }))
-            .toPromise()
-            .catch(function (error) { return console.log(error); });
-    };
-    EmbedVideoService.prototype.embed_dailymotion_image = function (id, options) {
-        if (typeof options === 'function') {
-            options = {};
-        }
-        options = options || {};
-        options.image = this.validDailyMotionOptions.indexOf(options.image) >= 0 ? options.image : 'thumbnail_480_url';
-        return this.http.get('https://api.dailymotion.com/video/' + id + '?fields=' + options.image)
-            .pipe(operators_1.map(function (res) {
-            return {
-                'link': res[options.image],
-                'html': '<img src="' + res[options.image] + '"/>'
-            };
-        }))
-            .toPromise()
-            .catch(function (error) { return console.log(error); });
-    };
-    EmbedVideoService.prototype.parseOptions = function (options) {
-        var queryString = '', attributes = '';
-        if (options && options.hasOwnProperty('query')) {
-            queryString = '?' + this.serializeQuery(options.query);
-        }
-        if (options && options.hasOwnProperty('attr')) {
-            var temp_1 = [];
-            Object.keys(options.attr).forEach(function (key) {
-                temp_1.push(key + '="' + (options.attr[key]) + '"');
-            });
-            attributes = ' ' + temp_1.join(' ');
-        }
-        return {
-            query: queryString,
-            attr: attributes
-        };
-    };
-    EmbedVideoService.prototype.serializeQuery = function (query) {
-        var queryString = [];
-        for (var p in query) {
-            if (query.hasOwnProperty(p)) {
-                queryString.push(encodeURIComponent(p) + '=' + encodeURIComponent(query[p]));
-            }
-        }
-        return queryString.join('&');
-    };
-    EmbedVideoService.prototype.sanitize_iframe = function (iframe) {
-        return this.sanitizer.bypassSecurityTrustHtml(iframe);
-    };
-    EmbedVideoService.prototype.detectVimeo = function (url) {
-        return (url.hostname === 'vimeo.com') ? url.pathname.split('/')[1] : null;
-    };
-    EmbedVideoService.prototype.detectYoutube = function (url) {
-        if (url.hostname.indexOf('youtube.com') > -1) {
-            return url.search.split('=')[1];
-        }
-        if (url.hostname === 'youtu.be') {
-            return url.pathname.split('/')[1];
-        }
-        return '';
-    };
-    EmbedVideoService.prototype.detectDailymotion = function (url) {
-        if (url.hostname.indexOf('dailymotion.com') > -1) {
-            return url.pathname.split('/')[2].split('_')[0];
-        }
-        if (url.hostname === 'dai.ly') {
-            return url.pathname.split('/')[1];
-        }
-        return '';
-    };
-    EmbedVideoService = __decorate([ __metadata("design:paramtypes", [http_1.HttpClient,
-            platform_browser_1.DomSanitizer])
-    ], EmbedVideoService);
-EmbedVideoService.ɵfac = function EmbedVideoService_Factory(t) { return new (t || EmbedVideoService)(ɵngcc0.ɵɵinject(ɵngcc1.HttpClient), ɵngcc0.ɵɵinject(ɵngcc2.DomSanitizer)); };
-EmbedVideoService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: EmbedVideoService, factory: function (t) { return EmbedVideoService.ɵfac(t); } });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(EmbedVideoService, [{
-        type: core_1.Injectable
-    }], function () { return [{ type: ɵngcc1.HttpClient }, { type: ɵngcc2.DomSanitizer }]; }, null); })();
-    return EmbedVideoService;
-}());
-exports.EmbedVideoService = EmbedVideoService;
-
-//# sourceMappingURL=embed-video.service.js.map
 
 /***/ }),
 

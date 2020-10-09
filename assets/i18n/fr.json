@@ -1,0 +1,141 @@
+{
+  "menu": {
+    "news": {
+      "title": "ACTUALITÉS"
+    },
+    "community": {
+      "title": "COMMUNAUTÉ",
+      "submenu": {
+        "pubg_api": {
+          "title": "PUBG API"
+        },
+        "facebook": {
+          "title": "Facebook"
+        },
+        "facebook_group": {
+          "title": "Facebook Group"
+        },
+        "twitter": {
+          "title": "Twitter"
+        },
+        "youtube": {
+          "title": "Youtube"
+        },
+        "twitch": {
+          "title": "Twitch"
+        },
+        "reddit": {
+          "title": "Reddit"
+        },
+        "instagram": {
+          "title": "Instagram"
+        },
+        "discord": {
+          "title": "Discord"
+        },
+        "passport": {
+          "title": "Passport 8.2 Sweepstakes"
+        },
+        "naver_cafe": {
+          "title": "Naver Cafe"
+        },
+        "pubg_partner": {
+          "title": "PUBG PARTNER"
+        }
+      }
+    },
+    "season": {
+      "title": "SAISON 9"
+    },
+    "product": {
+      "title": "PRODUITS"
+    },
+    "support": {
+      "title": "ASSISTANCE"
+    },
+    "careers": {
+      "title": "EMPLOIS"
+    },
+    "esports": {
+      "title": "esports"
+    }
+  }, 
+  "login": "CONNEXION",
+  "buynow": {
+    "title": "ACHETER MAINTENANT",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "partner": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": {
+      "title": "Privacy Policy"
+    },
+    "terms_service": {
+      "title": "Terms of Service"
+    },
+    "rules_conduct": {
+      "title": "Rules of Conduct"
+    },
+    "eula": {
+      "title": "EULA"
+    },
+    "player_created_content": {
+      "title": "Player-created Content"
+    }
+  },
+  "section": {
+    "0": {
+      "title": "Découvrez Paramo"
+    },
+    "1": {
+      "title": "New Season 9",
+      "paragraph": {
+        "title": "G-Coin désormais disponibles sur PC",
+        "description": "Nous venons de faciliter le processus d'achats au sein du jeu avec l'implémentation des G-Coin dans la version PC ! À partir de maintenant, le montant des achats effectués dans la boutique PUBG sera prélevé sur votre solde de portefeuille de G-Coin, évitant ainsi la nécessité d'une transaction bancaire pour chaque article. Mieux encore, vous pouvez gagner jusqu'à 5 $ de G-Coin en accomplissant des missions du Pass Survivant : Highlands. Il vous sera ainsi possible de choisir votre propre récompense via la boutique PUBG.",
+        "detail_view": "Plus de détails"
+      }
+    },
+    "2": {
+      "title": "Pass Survivant : Highlands",
+      "paragraph": {
+        "description": "La saison 9 est arrivée avec un tout nouveau Pass Survivant ! Ce pass à la durée plus courte n'est valable que 2 mois, mais vous pouvez l'utiliser dès le niveau 50 et débloquer ainsi plus rapidement toutes ses superbes récompenses !"
+      }
+    },
+    "3": {
+      "title": ""
+    },
+    "4": {
+      "title": "Découvrez de nouveaux sommets"
+    },
+    "5": {
+      "title": "Et emparez-vous de la victoire"
+    },
+    "6": {
+      "title": "Découvrez les possibilités infinies de Paramo"
+    },
+    "7": {
+      "title": "Disponible sur"
+    }
+  },
+  "type_a": "Type A",
+  "type_b": "Type B",
+  "type_c": "Type C",
+  "console_exclusive": "Exclusivité console",
+  "console_exclusive_items": "Objets exclusivités console"
+}

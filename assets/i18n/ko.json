@@ -1,0 +1,141 @@
+{
+  "menu": {
+    "news": {
+      "title": "뉴스"
+    },
+    "community": {
+      "title": "커뮤니티",
+      "submenu": {
+        "pubg_api": {
+          "title": "개발자 포럼"
+        },
+        "facebook": {
+          "title": "공식 페이스북"
+        },
+        "facebook_group": {
+          "title": "Facebook Group"
+        },
+        "twitter": {
+          "title": "Twitter"
+        },
+        "youtube": {
+          "title": "공식 유튜브 채널"
+        },
+        "twitch": {
+          "title": "Twitch"
+        },
+        "reddit": {
+          "title": "Reddit"
+        },
+        "instagram": {
+          "title": "Instagram"
+        },
+        "discord": {
+          "title": "Discord"
+        },
+        "passport": {
+          "title": "Passport 8.2 Sweepstakes"
+        },
+        "naver_cafe": {
+          "title": "공식 네이버 카페"
+        },
+        "pubg_partner": {
+          "title": "PUBG PARTNER"
+        }
+      }
+    },
+    "season": {
+      "title": "시즌 9"
+    },
+    "product": {
+      "title": "상품"
+    },
+    "support": {
+      "title": "고객지원"
+    },
+    "careers": {
+      "title": "채용"
+    },
+    "esports": {
+      "title": "esports"
+    }
+  }, 
+  "login": "로그인",
+  "buynow": {
+    "title": "지금 구입",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "partner": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": {
+      "title": "Privacy Policy"
+    },
+    "terms_service": {
+      "title": "Terms of Service"
+    },
+    "rules_conduct": {
+      "title": "Rules of Conduct"
+    },
+    "eula": {
+      "title": "EULA"
+    },
+    "player_created_content": {
+      "title": "Player-created Content"
+    }
+  },
+  "section": {
+    "0": {
+      "title": "Paramo를 탐험하세요"
+    },
+    "1": {
+      "title": "New Season 9",
+      "paragraph": {
+        "title": "이제 PC에서도 G-Coin을 이용할 수 있습니다.",
+        "description": "이제 G-Coin을 통해 인게임 아이템 구매가 더욱 쉽고 편리해졌습니다! 상점에서 아이템을 구매할 때 스팀 결제를 요청하는 대신, 미리 충전이 가능한 G-Coin을 통해 결제를 진행할 수 있습니다. 더 좋은 소식은, 서바이버 패스: 하이랜드에서 미션을 완료하면 최대 $5 상당의 G-coin을 획득할 수 있고, 이를 통해 게임 내 상점에서 아이템 구매로 사용하실 수 있다는 점입니다.",
+        "detail_view": "자세히 보기"
+      }
+    },
+    "2": {
+      "title": "서바이버 패스: 하이랜드",
+      "paragraph": {
+        "description": "새로운 서바이버 패스와 함께 시즌 9가 시작되었습니다! 이번 패스는 미니패스로 2달동안 진행되며, 최대 레벨은 50으로 기존 서바이버 패스보다 좀 더 빠르게 진행하고 보상을 획득하실 수 있습니다. 새 시즌에 맞춰 새로운 시즌 맵이 함께합니다. Paramo는 구름으로 둘러싸인 산악 지대 속 잊혀진 문명에 자리잡고 있으며, 보급 헬리콥터, 응급 지혈 주사, 활화산에서 뿜어져 나오는 용암 등 새롭고 신나는 게임플레이도 즐겨보실 수 있습니다! 또 매치에 따라 구역이 변하는 다이나믹한 지형도 있어, 플레이할 때마다 새로운 경험을 안겨주죠!"
+      }
+    },
+    "3": {
+      "title": ""
+    },
+    "4": {
+      "title": "새로운 고산지대에 올라"
+    },
+    "5": {
+      "title": "승리를 거머쥐세요"
+    },
+    "6": {
+      "title": "Paramo의 끝없는 가능성을 탐험하세요."
+    },
+    "7": {
+      "title": "Available At"
+    }
+  },
+  "type_a": "타입 A",
+  "type_b": "타입 B",
+  "type_c": "타입 C",
+  "console_exclusive": "콘솔 전용",
+  "console_exclusive_items": "콘솔 전용 아이템"
+}

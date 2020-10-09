@@ -1,0 +1,141 @@
+{
+  "menu": {
+    "news": {
+      "title": "News"
+    },
+    "community": {
+      "title": "Community",
+      "submenu": {
+        "pubg_api": {
+          "title": "PUBG API"
+        },
+        "facebook": {
+          "title": "Facebook"
+        },
+        "facebook_group": {
+          "title": "Facebook Group"
+        },
+        "twitter": {
+          "title": "Twitter"
+        },
+        "youtube": {
+          "title": "Youtube"
+        },
+        "twitch": {
+          "title": "Twitch"
+        },
+        "reddit": {
+          "title": "Reddit"
+        },
+        "instagram": {
+          "title": "Instagram"
+        },
+        "discord": {
+          "title": "Discord"
+        },
+        "passport": {
+          "title": "Passport 8.2 Sweepstakes"
+        },
+        "naver_cafe": {
+          "title": "Naver Cafe"
+        },
+        "pubg_partner": {
+          "title": "PUBG PARTNER"
+        }
+      }
+    },
+    "season": {
+      "title": "Season 9"
+    },
+    "product": {
+      "title": "Product"
+    },
+    "support": {
+      "title": "Support"
+    },
+    "careers": {
+      "title": "Careers"
+    },
+    "esports": {
+      "title": "esports"
+    }
+  }, 
+  "login": "Login",
+  "buynow": {
+    "title": "Buy Now",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "partner": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": {
+      "title": "Privacy Policy"
+    },
+    "terms_service": {
+      "title": "Terms of Service"
+    },
+    "rules_conduct": {
+      "title": "Rules of Conduct"
+    },
+    "eula": {
+      "title": "EULA"
+    },
+    "player_created_content": {
+      "title": "Player-created Content"
+    }
+  },
+  "section": {
+    "0": {
+      "title": "Discover Paramo"
+    },
+    "1": {
+      "title": "New Season 9",
+      "paragraph": {
+        "title": "G-Coin now live on PC",
+        "description": "We've just made in-game purchasing easier with the addition of G-Coin to PC! Starting now, purchases made in the PUBG store will pull from your refillable G-Coin wallet balance instead of requiring a cash transaction for each item. Even better, you can earn up to $5 worth of G-Coin by completing missions in Survivor Pass: Highlands, allowing you to choose your own reward from the PUBG Store. For more details on the switch to G-Coin, please visit pubg.com.",
+        "detail_view": "Detail View"
+      }
+    },
+    "2": {
+      "title": "Survivor Pass: Highlands",
+      "paragraph": {
+        "description": "Season 9 is here with an all new Survivor Pass! This shortened pass lasts for only 2 months, but also has a lower requirement of Level 50, letting you unlock all its great rewards faster! With the new Season comes a brand new seasonal map. Paramo lies surrounded by clouds in the highlands of a forgotten civilization, and comes with exciting new gameplay features such as Supply Helicopters, the Critical Response Kit, and Molten Lava from a live volcano! Paramo also features dynamic terrain, where areas change from match to match, giving you a new experience each time you play! Grab the Survivor Pass, discover the lost city of Paramo, and take on the Battlegrounds like never before!"
+      }
+    },
+    "3": {
+      "title": ""
+    },
+    "4": {
+      "title": "Discover New Heights"
+    },
+    "5": {
+      "title": "And Claim Your Victory"
+    },
+    "6": {
+      "title": "Discover the endless possibilities of Paramo"
+    },
+    "7": {
+      "title": "Available At"
+    }
+  },
+  "type_a": "Type A",
+  "type_b": "Type B",
+  "type_c": "Type C",
+  "console_exclusive": "Console Exclusive",
+  "console_exclusive_items": "Console Exclusive Items"
+}
