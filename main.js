@@ -1248,14 +1248,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
-/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ngx-translate/core */ "sYmb");
-/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ngx-translate/http-loader */ "mqiu");
-/* harmony import */ var ngx_youtube_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-youtube-player */ "B1r6");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "Sy1n");
-/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/header/header.component */ "2MiI");
-/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/footer/footer.component */ "LmEr");
-/* harmony import */ var _components_content_content_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/content/content.component */ "Cuw9");
-/* harmony import */ var _pipes_menu_pipe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pipes/menu.pipe */ "DJsg");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ngx-translate/core */ "sYmb");
+/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ngx-translate/http-loader */ "mqiu");
+/* harmony import */ var ngx_youtube_player__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-youtube-player */ "B1r6");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/header/header.component */ "2MiI");
+/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/footer/footer.component */ "LmEr");
+/* harmony import */ var _components_content_content_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/content/content.component */ "Cuw9");
+/* harmony import */ var _pipes_menu_pipe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pipes/menu.pipe */ "DJsg");
+
 
 
 
@@ -1273,61 +1275,61 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function createTranslateLoader(http) {
-    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_5__["TranslateHttpLoader"](http, './assets/i18n/', '.json');
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_6__["TranslateHttpLoader"](http, './assets/i18n/', '.json');
 }
 class AppModule {
 }
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_4__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_4__["PathLocationStrategy"] }], imports: [[
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([
-                { path: '', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_10__["ContentComponent"] },
-                { path: ':lang', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_10__["ContentComponent"] }
+                { path: '', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_11__["ContentComponent"] },
+                { path: ':lang', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_11__["ContentComponent"] }
             ]),
-            _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateModule"].forRoot({
+            _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateModule"].forRoot({
                 loader: {
-                    provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateLoader"],
+                    provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateLoader"],
                     useFactory: (createTranslateLoader),
                     deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]]
                 }
             }),
-            ngx_youtube_player__WEBPACK_IMPORTED_MODULE_6__["NgxYoutubePlayerModule"].forRoot()
+            ngx_youtube_player__WEBPACK_IMPORTED_MODULE_7__["NgxYoutubePlayerModule"].forRoot()
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
-        _components_header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"],
-        _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"],
-        _components_content_content_component__WEBPACK_IMPORTED_MODULE_10__["ContentComponent"],
-        _pipes_menu_pipe__WEBPACK_IMPORTED_MODULE_11__["MenuPipe"]], imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"], _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateModule"], ngx_youtube_player__WEBPACK_IMPORTED_MODULE_6__["NgxYoutubePlayerModule"]] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+        _components_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
+        _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"],
+        _components_content_content_component__WEBPACK_IMPORTED_MODULE_11__["ContentComponent"],
+        _pipes_menu_pipe__WEBPACK_IMPORTED_MODULE_12__["MenuPipe"]], imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"], _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateModule"], ngx_youtube_player__WEBPACK_IMPORTED_MODULE_7__["NgxYoutubePlayerModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
                 declarations: [
-                    _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
-                    _components_header_header_component__WEBPACK_IMPORTED_MODULE_8__["HeaderComponent"],
-                    _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_9__["FooterComponent"],
-                    _components_content_content_component__WEBPACK_IMPORTED_MODULE_10__["ContentComponent"],
-                    _pipes_menu_pipe__WEBPACK_IMPORTED_MODULE_11__["MenuPipe"]
+                    _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                    _components_header_header_component__WEBPACK_IMPORTED_MODULE_9__["HeaderComponent"],
+                    _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponent"],
+                    _components_content_content_component__WEBPACK_IMPORTED_MODULE_11__["ContentComponent"],
+                    _pipes_menu_pipe__WEBPACK_IMPORTED_MODULE_12__["MenuPipe"]
                 ],
                 imports: [
                     _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                     _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([
-                        { path: '', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_10__["ContentComponent"] },
-                        { path: ':lang', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_10__["ContentComponent"] }
+                        { path: '', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_11__["ContentComponent"] },
+                        { path: ':lang', component: _components_content_content_component__WEBPACK_IMPORTED_MODULE_11__["ContentComponent"] }
                     ]),
-                    _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateModule"].forRoot({
+                    _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateModule"].forRoot({
                         loader: {
-                            provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateLoader"],
+                            provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslateLoader"],
                             useFactory: (createTranslateLoader),
                             deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]]
                         }
                     }),
-                    ngx_youtube_player__WEBPACK_IMPORTED_MODULE_6__["NgxYoutubePlayerModule"].forRoot()
+                    ngx_youtube_player__WEBPACK_IMPORTED_MODULE_7__["NgxYoutubePlayerModule"].forRoot()
                 ],
-                providers: [],
-                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
+                providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_4__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_4__["PathLocationStrategy"] }],
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
             }]
     }], null, null); })();
 
