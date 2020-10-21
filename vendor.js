@@ -11587,6 +11587,395 @@ function version(uuid) {
 
 /***/ }),
 
+/***/ "e/9f":
+/*!************************************************************************!*\
+  !*** ./node_modules/angular-gtag/__ivy_ngcc__/esm2015/angular-gtag.js ***!
+  \************************************************************************/
+/*! exports provided: Gtag, GtagEventDirective, GtagModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Gtag", function() { return Gtag; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GtagEventDirective", function() { return GtagEventDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GtagModule", function() { return GtagModule; });
+/* harmony import */ var C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "1OyB");
+/* harmony import */ var C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "vuIU");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+
+
+
+
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+
+
+
+
+var Gtag = /*#__PURE__*/function () {
+  /**
+   * @param {?} gaConfig
+   * @param {?} router
+   */
+  function Gtag(gaConfig, router) {
+    var _this = this;
+
+    Object(C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Gtag);
+
+    this.router = router;
+    this.mergedConfig = Object.assign({
+      trackPageviews: true
+    }, gaConfig);
+
+    if (this.mergedConfig.trackPageviews) {
+      router.events.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["filter"])(function (event) {
+        return event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"];
+      }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(function (event) {
+        _this.pageview();
+      })).subscribe();
+    }
+  }
+  /**
+   * @param {?} action
+   * @param {?=} params
+   * @return {?}
+   */
+
+
+  Object(C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Gtag, [{
+    key: "event",
+    value: function event(action) {
+      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      // try/catch to avoid cross-platform issues
+      try {
+        gtag('event', action, params);
+        this.debug('event', this.mergedConfig.trackingId, action, params);
+      } catch (
+      /** @type {?} */
+      err) {
+        console.error('Google Analytics event error', err);
+      }
+    }
+    /**
+     * @param {?=} params
+     * @return {?}
+     */
+
+  }, {
+    key: "pageview",
+    value: function pageview(params) {
+      try {
+        var
+        /** @type {?} */
+        defaults = {
+          page_path: this.router.url,
+          page_title: 'Angular App',
+          page_location: window.location.href
+        };
+        params = Object.assign({}, defaults, params);
+        gtag('config', this.mergedConfig.trackingId, params);
+        this.debug('pageview', this.mergedConfig.trackingId, params);
+      } catch (
+      /** @type {?} */
+      err) {
+        console.error('Google Analytics pageview error', err);
+      }
+    }
+    /**
+     * @param {?} params
+     * @return {?}
+     */
+
+  }, {
+    key: "config",
+    value: function config(params) {
+      try {
+        gtag('config', this.mergedConfig.trackingId, params = {});
+      } catch (
+      /** @type {?} */
+      err) {
+        console.error('Google Analytics config error', err);
+      }
+    }
+    /**
+     * @param {?} params
+     * @return {?}
+     */
+
+  }, {
+    key: "set",
+    value: function set(params) {
+      try {
+        gtag('set', params = {});
+      } catch (
+      /** @type {?} */
+      err) {
+        console.error('Google Analytics set error', err);
+      }
+    }
+    /**
+     * @param {...?} msg
+     * @return {?}
+     */
+
+  }, {
+    key: "debug",
+    value: function debug() {
+      if (this.mergedConfig.debug) {
+        var _console;
+
+        for (var _len = arguments.length, msg = new Array(_len), _key = 0; _key < _len; _key++) {
+          msg[_key] = arguments[_key];
+        }
+
+        (_console = console).log.apply(_console, ['angular-gtag:'].concat(msg));
+      }
+    }
+  }]);
+
+  return Gtag;
+}();
+
+Gtag.ɵfac = function Gtag_Factory(t) {
+  return new (t || Gtag)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"]('config'), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]));
+};
+
+Gtag.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+  token: Gtag,
+  factory: Gtag.ɵfac
+});
+/** @nocollapse */
+
+Gtag.ctorParameters = function () {
+  return [{
+    type: undefined,
+    decorators: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
+      args: ['config']
+    }]
+  }, {
+    type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+  }];
+};
+/*@__PURE__*/
+
+
+(function () {
+  _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](Gtag, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"]
+  }], function () {
+    return [{
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
+        args: ['config']
+      }]
+    }, {
+      type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+    }];
+  }, null);
+})();
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+
+
+var GtagEventDirective = /*#__PURE__*/function () {
+  /**
+   * @param {?} gtag
+   * @param {?} renderer
+   * @param {?} el
+   */
+  function GtagEventDirective(gtag, renderer, el) {
+    Object(C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, GtagEventDirective);
+
+    this.gtag = gtag;
+    this.renderer = renderer;
+    this.el = el;
+  }
+  /**
+   * @return {?}
+   */
+
+
+  Object(C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(GtagEventDirective, [{
+    key: "ngAfterViewInit",
+    value: function ngAfterViewInit() {
+      var _this2 = this;
+
+      try {
+        this.renderer.listen(this.el.nativeElement, this.trackOn, function () {
+          _this2.gtag.event(_this2.action || _this2.trackOn, Object.assign({
+            event_category: _this2.category
+          }, _this2.params));
+        });
+      } catch (
+      /** @type {?} */
+      err) {
+        console.error(err);
+      }
+    }
+  }]);
+
+  return GtagEventDirective;
+}();
+
+GtagEventDirective.ɵfac = function GtagEventDirective_Factory(t) {
+  return new (t || GtagEventDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](Gtag), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]));
+};
+
+GtagEventDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
+  type: GtagEventDirective,
+  selectors: [["", "gtagEvent", ""]],
+  inputs: {
+    trackOn: "trackOn",
+    action: "action",
+    category: "category",
+    params: "params"
+  }
+});
+/** @nocollapse */
+
+GtagEventDirective.ctorParameters = function () {
+  return [{
+    type: Gtag
+  }, {
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]
+  }, {
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]
+  }];
+};
+
+GtagEventDirective.propDecorators = {
+  "trackOn": [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+  }],
+  "action": [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+  }],
+  "category": [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+  }],
+  "params": [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+  }]
+};
+/*@__PURE__*/
+
+(function () {
+  _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](GtagEventDirective, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
+    args: [{
+      selector: '[gtagEvent]'
+    }]
+  }], function () {
+    return [{
+      type: Gtag
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]
+    }];
+  }, {
+    trackOn: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+    }],
+    action: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+    }],
+    category: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+    }],
+    params: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+    }]
+  });
+})();
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+
+
+var GtagModule = /*#__PURE__*/function () {
+  function GtagModule() {
+    Object(C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, GtagModule);
+  }
+
+  Object(C_Users_u_ng_workspace_season9_1015_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(GtagModule, null, [{
+    key: "forRoot",
+
+    /**
+     * @param {?} config
+     * @return {?}
+     */
+    value: function forRoot(config) {
+      return {
+        ngModule: GtagModule,
+        providers: [Gtag, {
+          provide: 'config',
+          useValue: config
+        }]
+      };
+    }
+  }]);
+
+  return GtagModule;
+}();
+
+GtagModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
+  type: GtagModule
+});
+GtagModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
+  factory: function GtagModule_Factory(t) {
+    return new (t || GtagModule)();
+  }
+});
+
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](GtagModule, {
+    declarations: [GtagEventDirective],
+    exports: [GtagEventDirective]
+  });
+})();
+/*@__PURE__*/
+
+
+(function () {
+  _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](GtagModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
+    args: [{
+      declarations: [GtagEventDirective],
+      exports: [GtagEventDirective]
+    }]
+  }], null, null);
+})();
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+
+/***/ }),
+
 /***/ "eIep":
 /*!********************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/operators/switchMap.js ***!
