@@ -1,0 +1,124 @@
+{
+  "title": "Survivor Pass: Highlands",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/en/news/?_ga=2.205354832.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "https://www.facebook.com/PUBG/",
+      "community_twitter": "https://www.twitter.com/PUBG",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_reddit": "https://www.reddit.com/r/PUBATTLEGROUNDS/",
+      "community_instagram": "https://www.instagram.com/pubg/",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/en/merch/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/en/support/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
+    },
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/privacy/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/terms-of-service/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "rules_conduct": "https://www.pubg.com/rules-of-conduct?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/player-created-content/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/eula?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787"
+    }
+  },
+  "menu": {
+    "news": "News",
+    "community": "Community",
+    "community_facebook": "Facebook",
+    "community_twitter": "Twitter",
+    "community_youtube": "Youtube",
+    "community_reddit": "Reddit",
+    "community_instagram": "Instagram",
+    "community_dev": "PUBG API",
+    "merchandise": "Merchandise",
+    "support": "Support",
+    "careers": "Careers",
+    "esports": "ESPORTS"
+  },
+  "account" : {
+    "login": "Login",
+    "logout": "Logout",
+    "myaccount": "My Account"
+  },
+  "buynow": {
+    "title": "Buy Now",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "inquiry": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": "Privacy Policy",
+    "terms_service": "Terms of Service",
+    "rules_conduct": "Rules of Conduct",
+    "eula": "EULA",
+    "player_created_content": "Player-created Content"
+  },
+  "section": {
+    "main": {
+      "title": "Explora --Paramo--"
+    },
+    "season": {
+      "title": "G-Coin chegou ao PC",
+      "paragraph": {
+        "title": "Adicionámos a G-Coin ao PC para facilitar as compras no jogo!",
+        "description": "A partir de agora, quando compras algo na loja do PUBG, usas o saldo recarregável da carteira G-Coin em vez de dinheiro real. Além disso, conclui missões no Passe de Sobrevivente: Highlands para ganhares até $ 5 em G-Coin e poderes escolher a tua recompensa na loja do PUBG. Consulta o site pubg.com para obteres mais informações sobre as mudanças para G-Coin."
+      },
+      "detail_view": "Detail View",
+      "detail_view_link": "https://www.pubg.com/pt/2020/09/22/g-coin-announcement/"
+    },
+    "season-description": {
+      "title": "Survivor Pass: Highlands",
+      "paragraph": {
+        "description": "A Temporada 9 chegou com um novo Passe de Sobrevivente! Este passe foi encurtado para 2 meses e, por isso, também baixámos os requisitos para o nível 50, de modo a desbloqueares mais rapidamente todas as recompensas espetaculares! A nova temporada leva-nos a um novo mapa sazonal. Uma civilização há muito esquecida entre as nuvens das terras altas de Paramo. Lá poderás explorar novas caraterísticas de jogo, como os Helicópteros de Reabastecimento, o Kit de Reanimação e a Lava Derretida de um vulcão ativo! Paramo conta também com terreno dinâmico, onde certas zonas mudam de jogo para jogo para que cada partida seja diferente! Obtém o Passe de Sobrevivente, explora a cidade perdida de Paramo e domina os Battlegrounds de forma inovadora!"
+      }
+    },
+    "video": {
+      "title": ""
+    },
+    "item": {
+      "title": "Explora novos territórios",
+      "type_a": "Tipo A",
+      "type_b": "Tipo B",
+      "type_c": "Tipo C",
+      "merc_team_uniform": "Uniforme Mercenários",
+      "merc_team_pants": "Calças Mercenários",
+      "merc_team_gloves": "Luvas Mercenários",
+      "merc_team_shoes": "Sapatos Mercenários",
+      "tribal_raptor_sks": "Abutre Ancião - SKS",
+      "mals_night_ops_suit": "Fato Noturno da Mal",
+      "console_exclusive": "Exclusivo para consolas",
+      "console_exclusive_items": "Itens exclusivos para consolas",
+      "tribal_glyph_winter_hat": "Gorro Glifo Tribal",
+      "tribal_glyph_hoodie": "Camisola com Capuz Glifo Tribal",
+      "tribal_glyph_pants": "Calças Glifo Tribal",
+      "tribal_glyph_boots": "Botas Glifo Tribal"
+    },
+    "character": {
+      "title": "e conquista a vitória"
+    },
+    "map": {
+      "title": "Descobre as infindáveis oportunidades de Paramo"
+    },
+    "banner": {
+      "title": "Available At"
+    }
+  }
+}

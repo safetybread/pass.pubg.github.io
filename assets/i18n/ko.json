@@ -1,66 +1,45 @@
 {
-  "menu": {
-    "news": {
-      "title": "뉴스"
+  "title": "서바이버 패스: 하이랜드",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/ko/news/?_ga=2.205354832.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "https://www.facebook.com/PUBG/",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_navercafe": "https://cafe.naver.com/playbattlegrounds",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/ko/merch/?_ga=2.3511280.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/ko/support/?_ga=2.247951559.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.247951559.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
     },
-    "community": {
-      "title": "커뮤니티",
-      "submenu": {
-        "pubg_api": {
-          "title": "개발자 포럼"
-        },
-        "facebook": {
-          "title": "공식 페이스북"
-        },
-        "facebook_group": {
-          "title": "Facebook Group"
-        },
-        "twitter": {
-          "title": "Twitter"
-        },
-        "youtube": {
-          "title": "공식 유튜브 채널"
-        },
-        "twitch": {
-          "title": "Twitch"
-        },
-        "reddit": {
-          "title": "Reddit"
-        },
-        "instagram": {
-          "title": "Instagram"
-        },
-        "discord": {
-          "title": "Discord"
-        },
-        "passport": {
-          "title": "Passport 8.2 Sweepstakes"
-        },
-        "naver_cafe": {
-          "title": "공식 네이버 카페"
-        },
-        "pubg_partner": {
-          "title": "PUBG PARTNER"
-        }
-      }
-    },
-    "season": {
-      "title": "시즌 9"
-    },
-    "product": {
-      "title": "상품"
-    },
-    "support": {
-      "title": "고객지원"
-    },
-    "careers": {
-      "title": "채용"
-    },
-    "esports": {
-      "title": "esports"
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/ko/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8/?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/ko/player-created-content/?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/ko/terms-of-service/?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787",
+      "운영정책": "https://www.pubg.com/ko/%EC%9A%B4%EC%98%81%EC%A0%95%EC%B1%85?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787",
+      "최종_사용자_라이선스_계약": "https://www.pubg.com/ko/%EC%9A%B4%EC%98%81%EC%A0%95%EC%B1%85?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787",
+      "청약철회_규정": "https://www.pubg.com/ko/krwithdrawalpolicy/?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787"
     }
+  },
+  "menu": {
+    "news": "뉴스",
+    "community": "커뮤니티",
+    "community_facebook": "공식 페이스북",
+    "community_youtube": "공식 유튜브",
+    "community_navercafe": "공식 네이버 카페",
+    "community_dev": "개발자 포털",
+    "merchandise": "상품",
+    "support": "고객지원",
+    "careers": "채용",
+    "esports": "ESPORTS"
   }, 
-  "login": "로그인",
+  "account" : {
+    "login": "로그인",
+    "logout": "로그아웃",
+    "myaccount": "My Account"
+  },
   "buynow": {
     "title": "지금 구입",
     "steam": {
@@ -81,61 +60,63 @@
   }, 
   "footer": {
     "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
-    "partner": "Partnership Inquiry",
+    "inquiry": "Partnership Inquiry",
     "inquiry_email": "PUBG_Partnership@pubg.com",
-    "privacy_policy": {
-      "title": "Privacy Policy"
-    },
-    "terms_service": {
-      "title": "Terms of Service"
-    },
-    "rules_conduct": {
-      "title": "Rules of Conduct"
-    },
-    "eula": {
-      "title": "EULA"
-    },
-    "player_created_content": {
-      "title": "Player-created Content"
-    }
+    "privacy_policy": "개인정보 처리방침",
+    "player_created_content": "이용자 제작 콘텐츠 규칙",
+    "terms_service": "이용약관",
+    "운영정책": "운영정책",
+    "최종_사용자_라이선스_계약": "최종 사용자 라이선스 계약",
+    "청약철회_규정": "청약철회 규정"
   },
   "section": {
-    "0": {
-      "title": "Paramo를 탐험하세요"
+    "main": {
+      "title": "--Paramo--를 탐험하세요"
     },
-    "1": {
-      "title": "New Season 9",
+    "season": {
+      "title": "이제 PC에서도 G-Coin을 이용할 수 있습니다.",
       "paragraph": {
-        "title": "이제 PC에서도 G-Coin을 이용할 수 있습니다.",
-        "description": "이제 G-Coin을 통해 인게임 아이템 구매가 더욱 쉽고 편리해졌습니다! 상점에서 아이템을 구매할 때 스팀 결제를 요청하는 대신, 미리 충전이 가능한 G-Coin을 통해 결제를 진행할 수 있습니다. 더 좋은 소식은, 서바이버 패스: 하이랜드에서 미션을 완료하면 최대 $5 상당의 G-coin을 획득할 수 있고, 이를 통해 게임 내 상점에서 아이템 구매로 사용하실 수 있다는 점입니다.",
-        "detail_view": "자세히 보기"
-      }
+        "title": "이제 G-Coin을 통해 인게임 아이템 구매가 더욱 쉽고 편리해졌습니다!",
+        "description": "상점에서 아이템을 구매할 때 스팀 결제를 요청하는 대신, 미리 충전이 가능한 G-Coin을 통해 결제를 진행할 수 있습니다. 더 좋은 소식은, 서바이버 패스: 하이랜드에서 미션을 완료하면 최대 $10 상당의 G-coin을 획득할 수 있고, 이를 통해 게임 내 상점에서 아이템 구매로 사용하실 수 있다는 점입니다. G-Coin 이용 관련 더 자세한 정보는 공식 사이트의 공지를 참고해주시기 바랍니다."
+      },
+      "detail_view": "자세히 보기",
+      "detail_view_link": "https://www.pubg.com/ko/2020/09/22/g-coin-announcement"
     },
-    "2": {
+    "season-description": {
       "title": "서바이버 패스: 하이랜드",
       "paragraph": {
         "description": "새로운 서바이버 패스와 함께 시즌 9가 시작되었습니다! 이번 패스는 미니패스로 2달동안 진행되며, 최대 레벨은 50으로 기존 서바이버 패스보다 좀 더 빠르게 진행하고 보상을 획득하실 수 있습니다. 새 시즌에 맞춰 새로운 시즌 맵이 함께합니다. Paramo는 구름으로 둘러싸인 산악 지대 속 잊혀진 문명에 자리잡고 있으며, 보급 헬리콥터, 응급 지혈 주사, 활화산에서 뿜어져 나오는 용암 등 새롭고 신나는 게임플레이도 즐겨보실 수 있습니다! 또 매치에 따라 구역이 변하는 다이나믹한 지형도 있어, 플레이할 때마다 새로운 경험을 안겨주죠!"
       }
     },
-    "3": {
+    "video": {
       "title": ""
     },
-    "4": {
-      "title": "새로운 고산지대에 올라"
+    "item": {
+      "title": "새로운 고산지대에 올라",
+      "type_a": "타입 A",
+      "type_b": "타입 B",
+      "type_c": "타입 C",
+      "merc_team_uniform": "용병 팀 유니폼",
+      "merc_team_pants": "용병 팀 바지",
+      "merc_team_gloves": "용병 팀 장갑",
+      "merc_team_shoes": "용병 팀 신발",
+      "tribal_raptor_sks": "트라이벌 랩터 - SKS",
+      "mals_night_ops_suit": "말호트라의 야간 작전 슈트",
+      "console_exclusive": "콘솔 전용",
+      "console_exclusive_items": "콘솔 전용 아이템",
+      "tribal_glyph_winter_hat": "트라이벌 문양 겨울 모자",
+      "tribal_glyph_hoodie": "트라이벌 문양 후드티",
+      "tribal_glyph_pants": "트라이벌 문양 바지",
+      "tribal_glyph_boots": "트라이벌 문양 부츠"
     },
-    "5": {
+    "character": {
       "title": "승리를 거머쥐세요"
     },
-    "6": {
+    "map": {
       "title": "Paramo의 끝없는 가능성을 탐험하세요."
     },
-    "7": {
+    "banner": {
       "title": "Available At"
     }
-  },
-  "type_a": "타입 A",
-  "type_b": "타입 B",
-  "type_c": "타입 C",
-  "console_exclusive": "콘솔 전용",
-  "console_exclusive_items": "콘솔 전용 아이템"
+  }
 }

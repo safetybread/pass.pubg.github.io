@@ -1,0 +1,124 @@
+{
+  "title": "Survivor Pass: Highlands",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/zh-hant/news/?_ga=2.205354832.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "https://www.facebook.com/PUBG/",
+      "community_twitter": "https://www.twitter.com/PUBG",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_reddit": "https://www.reddit.com/r/PUBATTLEGROUNDS/",
+      "community_instagram": "https://www.instagram.com/pubg/",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/en/merch/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/en/support/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
+    },
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/privacy/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/terms-of-service/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "rules_conduct": "https://www.pubg.com/rules-of-conduct?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/player-created-content/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/eula?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787"
+    }
+  },
+  "menu": {
+    "news": "新闻中心",
+    "community": "社区 ",
+    "community_facebook": "Facebook",
+    "community_twitter": "Twitter",
+    "community_youtube": "Youtube",
+    "community_reddit": "Reddit",
+    "community_instagram": "Instagram",
+    "community_dev": "PUBG API",
+    "merchandise": "商品",
+    "support": "支援",
+    "careers": "职位信息",
+    "esports": "ESPORTS"
+  },
+  "account" : {
+    "login": "登录",
+    "logout": "退出",
+    "myaccount": "My Account"
+  },
+  "buynow": {
+    "title": "立即购买",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "inquiry": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": "Privacy Policy",
+    "terms_service": "Terms of Service",
+    "rules_conduct": "Rules of Conduct",
+    "eula": "EULA",
+    "player_created_content": "Player-created Content"
+  },
+  "section": {
+    "main": {
+      "title": "探索帕拉莫"
+    },
+    "season": {
+      "title": "G-Coin 现已登陆PC端",
+      "paragraph": {
+        "title": "我们在PC端也加入了G-Coin，\n\n让您的游戏内购物体验更加便利。",
+        "description": "从现在起，在PUBG商店购买物品时，会优先扣减您在可充值G-Coin钱包里的余额，余额不足时才会要求现金支付。最划算的是，如果您完成了生存通行证：巅峰中的任务，将获得最高价值为5美元的G-Coin，可用于PUBG游戏商店，选择自己想要的奖励。如需了解更多关于G-Coin的详细信息，请访问pubg.com。"
+      },
+      "detail_view": "详细",
+      "detail_view_link": "https://www.pubg.com/zh_CN/2020/09/22/g-coin-announcement/"
+    },
+    "season-description": {
+      "title": "Survivor Pass: Highlands",
+      "paragraph": {
+        "description": "第九赛季，带来了全新生存通行证！这次的通行证时长有所缩减，只为期2个月，但只要达到50级，即可畅快解锁所有丰厚奖励！ 本次新赛季还带来了全新的地图-帕拉莫。帕拉莫坐落在四周云雾缭绕的高地，那里是一个被人遗忘的古代文明，它包含着刺激又有趣的新玩法，例如补给直升机、紧急救援套件以及从活火山喷涌而出的熔岩！帕拉莫还具有动态地形，每场比赛部分区域都会有所变化，让您每次加入战斗时都能获得新的体验！ 获取生存通行证、探索遗忘之城帕拉莫，加入前所未有的战场一起绝地求生吧！"
+      }
+    },
+    "video": {
+      "title": ""
+    },
+    "item": {
+      "title": "探索新高地",
+      "type_a": "类型 A",
+      "type_b": "类型 B",
+      "type_c": "类型 C",
+      "merc_team_uniform": "佣兵队制服",
+      "merc_team_pants": "佣兵队长裤",
+      "merc_team_gloves": "佣兵队手套",
+      "merc_team_shoes": "佣兵队运动鞋",
+      "tribal_raptor_sks": "部落猛禽 - SKS",
+      "mals_night_ops_suit": "马尔霍特拉的夜行服",
+      "console_exclusive": "主机端专属",
+      "console_exclusive_items": "主机端专属物品",
+      "tribal_glyph_winter_hat": "部落纹饰绒线帽",
+      "tribal_glyph_hoodie": "部落纹饰连帽卫衣",
+      "tribal_glyph_pants": "部落纹饰长裤",
+      "tribal_glyph_boots": "部落纹饰短靴"
+    },
+    "character": {
+      "title": "并获得胜利"
+    },
+    "map": {
+      "title": "探索帕拉莫的无限可能"
+    },
+    "banner": {
+      "title": "Available At"
+    }
+  }
+}

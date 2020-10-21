@@ -1,0 +1,124 @@
+{
+  "title": "Survivor Pass: Highlands",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/en/news/?_ga=2.205354832.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "https://www.facebook.com/PUBG/",
+      "community_twitter": "https://www.twitter.com/PUBG",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_reddit": "https://www.reddit.com/r/PUBATTLEGROUNDS/",
+      "community_instagram": "https://www.instagram.com/pubg/",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/en/merch/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/en/support/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
+    },
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/privacy/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/terms-of-service/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "rules_conduct": "https://www.pubg.com/rules-of-conduct?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/player-created-content/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/eula?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787"
+    }
+  },
+  "menu": {
+    "news": "News",
+    "community": "Community",
+    "community_facebook": "Facebook",
+    "community_twitter": "Twitter",
+    "community_youtube": "Youtube",
+    "community_reddit": "Reddit",
+    "community_instagram": "Instagram",
+    "community_dev": "PUBG API",
+    "merchandise": "Merchandise",
+    "support": "Support",
+    "careers": "Careers",
+    "esports": "ESPORTS"
+  }, 
+  "account" : {
+    "login": "เข้าสู่ระบบ",
+    "logout": "ออกจากระบบ",
+    "myaccount": "My Account"
+  },
+  "buynow": {
+    "title": "Buy Now",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "inquiry": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": "Privacy Policy",
+    "terms_service": "Terms of Service",
+    "rules_conduct": "Rules of Conduct",
+    "eula": "EULA",
+    "player_created_content": "Player-created Content"
+  },
+  "section": {
+    "main": {
+      "title": "เปิดโลกใหม่ --Paramo--"
+    },
+    "season": {
+      "title": "ระบบใหม่ G-Coin เปิดแล้วบน PC",
+      "paragraph": {
+        "title": "การซื้อไอเทมในตัวเกมจะะง่ายขึ้น ด้วยระบบ G-Coin บน PC ที่เปิดให้ใช้งานแล้ว!",
+        "description": "ต่อไปจะสามารถใช้เงินจากกระเป๋าเงิน G-Coin ซึ่งเป็นหน่วยเงินที่คุณสามารถเติมใหม่ได้ในการซื้อไอเทม  ช่วยลดขั้นตอนในการซื้อ จากที่แต่เดิมต้องทำการชำระเงินใหม่ทุกครั้งที่จะซื้อไอเทม นอกจากนั้น คุณยังสามารถรับ G-Coin ฟรีมูลค่าสูงสุด $10 จากการทำภารกิจใน Survivor Pass: Highlands ให้สำเร็จ ซึ่งจะทำให้คุณเลือกรางวัลจากร้านค้าในเกม PUBG ตามใจตัวเองได้ด้วย ดูรายละเอียดเพิ่มเติมการใช้งานระบบ G-Coin ได้ที่ pubg.com"
+      },
+      "detail_view": "ดูเพิ่มเติม",
+      "detail_view_link": "https://www.pubg.com/th/2020/09/22/g-coin-announcement/"
+    },
+    "season-description": {
+      "title": "Survivor Pass: Highlands",
+      "paragraph": {
+        "description": "ฤดูกาลที่ 9 มาถึงแล้ว! พร้อมกับ Survivor Pass ใหม่! โดยในฤดูกาลใหม่นี้จะมีระยะเวลาสั้นลง เหลือเพียง 2 เดือนเท่านั้น และได้มีการปรับเลเวลของ PASS ให้เหลือเพียง 50 เลเวล ที่จะช่วยให้คุณปลดล็อกรางวัลทั้งหมดได้เร็วขึ้น! และพิเศษกับแผนที่ใหม่ล่าสุดประจำฤดูกาลที่ 9! Paramo ที่รายล้อมไปด้วยหมู่เมฆบนยอดเขาสูง กับร่องรอยของอารยธรรมที่ถูกลืมเลือน พร้อมกับระบบใหม่รูปแบบการเล่นใหม่ที่น่าตื่นเต้นขึ้นไปอีกขั้น เช่น เฮลิคอปเตอร์ส่งของ ชุดช่วยเหลือเร่งด่วน และหินลาวาที่ไหลออกมาจากภูเขาไฟที่ยังคงปะทุอยู่! นอกจากนี้แผนที่ Paramo ยังมีสภาพภูมิประเทศที่ไม่ตายตัว พื้นที่แต่ละจุดจะเปลี่ยนแปลงไปในทุกรอบที่คุณเล่น ทำให้คุณได้สัมผัสประสบการณ์ใหม่ทุกครั้งที่มาเยือน! ออกลุยภารกิจ Survivor Pass เพื่อค้นหาความลับใน Paramo ที่หายสาบสูญไป และเผชิญหน้ากับสนามรบแบบใหม่ที่คุณไม่เคยพบมาก่อน!"
+      }
+    },
+    "video": {
+      "title": ""
+    },
+    "item": {
+      "title": "ออกค้นหาจุดสูงสุดใหม่",
+      "type_a": "ประเภท A",
+      "type_b": "ประเภท B",
+      "type_c": "ประเภท C",
+      "merc_team_uniform": "ชุดเสื้อของทีมทหารรับจ้าง",
+      "merc_team_pants": "กางเกงของทีมทหารรับจ้าง",
+      "merc_team_gloves": "ถุงมือของทีมทหารรับจ้าง",
+      "merc_team_shoes": "รองเท้าของทีมทหารรับจ้าง",
+      "tribal_raptor_sks": "ไทรบัล แร็พเตอร์ - SKS",
+      "mals_night_ops_suit": "ชุดปฏิบัติการตอนกลางคืนของ Mal",
+      "console_exclusive": "พิเศษเฉพาะคอนโซล",
+      "console_exclusive_items": "ไอเทมพิเศษเฉพาะคอนโซล",
+      "tribal_glyph_winter_hat": "หมวกไหมพรมลายสลักของชาวเผ่า",
+      "tribal_glyph_hoodie": "เสื้อฮู้ดลายสลักของชาวเผ่า",
+      "tribal_glyph_pants": "กางเกงลายสลักของชาวเผ่า",
+      "tribal_glyph_boots": "รองเท้าลายสลักของชาวเผ่า"
+    },
+    "character": {
+      "title": "เพื่อคว้าชัยชนะมาให้ได้"
+    },
+    "map": {
+      "title": "ความมันส์ไม่มีที่สิ้นสุด เพราะอะไรก็เกิดขึ้นได้ใน Paramo"
+    },
+    "banner": {
+      "title": "พบกันได้ที่"
+    }
+  }
+}

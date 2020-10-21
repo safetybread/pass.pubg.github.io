@@ -1,0 +1,126 @@
+{
+  "title": "Survivor Pass: Highlands",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/en/news/?_ga=2.246349636.1196962647.1602663787-1687039636.1602663787",
+      "community_twitter": "https://www.twitter.com/PUBG",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_reddit": "https://www.reddit.com/r/PUBATTLEGROUNDS/",
+      "community_instagram": "https://www.instagram.com/pubg/",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/en/merch/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/en/support/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
+    },
+    "footer": {
+      "inquiry_email": "mailto:Tokyo_alliance@pubg.com",
+      "rules_conduct": "https://www.pubg.com/ja/rules-of-conduct?_ga=2.50622697.1196962647.1602663787-1687039636.1602663787",
+      "privacy_policy": "https://www.pubg.com/ja/privacy/?_ga=2.50622697.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/ja/player-created-content/?_ga=2.50622697.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/ja/eula?_ga=2.50622697.1196962647.1602663787-1687039636.1602663787",
+      "esport": "https://www.pubg.com/ja/category/esports-ja/",
+      "ps4_policy": "https://www.pubg.com/ja/legal-policy-ps4/?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787",
+      "xbox_policy": "https://www.pubg.com/ja/legal-policy-xbox/?_ga=2.214414167.1196962647.1602663787-1687039636.1602663787"
+    }
+  },
+  "menu": {
+    "news": "ホーム",
+    "community": "コミュニティ ",
+    "community_twitter": "Twitter",
+    "community_youtube": "Youtube",
+    "community_reddit": "Reddit",
+    "community_instagram": "Instagram",
+    "community_dev": "PUBG API",
+    "merchandise": "グッズ",
+    "support": "サポート",
+    "careers": "採用情報",
+    "esports": "ESPORTS"
+  }, 
+  "account" : {
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "myaccount": "My Account"
+  },
+  "buynow": {
+    "title": "今すぐ購入",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "著作権 2020 PUBG Corporation. 全著作権所有。PLAYERUNKNOWN’S BATTLEGROUNDSとPUBGは、PUBGの登録商標です。",
+    "inquiry": "企業お問い合わせ窓口",
+    "inquiry_email": "Tokyo_alliance@pubg.com",
+    "rules_conduct": "行動規範",
+    "privacy_policy": "プライバシーポリシー",
+    "player_created_content": "Player-created Content",
+    "eula": "使用許諾契約書",
+    "esport": "Esport",
+    "ps4_policy": "法律に基づく表記(PS4版)",
+    "xbox_policy": "法律に基づく表記(Xbox版)"
+  },
+  "section": {
+    "main": {
+      "title": "--PARAMO--を探せ"
+    },
+    "season": {
+      "title": "PCでG-Coinの利用が可能に",
+      "paragraph": {
+        "title": "ゲーム内での購入をより簡単にするため、PCにG-Coinを導入しました！",
+        "description": "今後はPUBGショップでのアイテムご購入の際に、現金決済ではなくチャージ可能なG-Coinウォレット残高からの引き落としでご利用いただけます。さらに、Survivor Pass: Highlandsでミッションを完了すると、最大5ドル相当のG-Coinを獲得でき、PUBGストアでご自身の報酬をお選びいただけます。 G-Coin切り替えの詳細については、pubg.comをご覧ください。"
+      },
+      "detail_view": "詳細",
+      "detail_view_link": "https://www.pubg.com/ja/2020/09/22/g-coin-announcement/"
+    },
+    "season-description": {
+      "title": "Survivor Pass: Highlands",
+      "paragraph": {
+        "description": "シーズン9が新しいSurvivor Passと共に新登場！Passの期間が2か月間と短くなりましたが、レベル50を達成するだけですべての素晴らしい報酬を獲得できるようになりました！ 新たなシーズンに新たなマップが登場。雲の合間にそびえ立つ高地の秘境、忘れられた文明PARAMOが、補給物資ヘリコプターや緊急蘇生キット、活火山から噴き出る溶岩といったエキサイティングな新機能を備えて新登場！ダイナミックな地形を誇るPARAMOは、マッチごとにエリアが変化するため、プレイするたびに新しいゲーム体験を楽しめます！ Survivor Passをゲットして失われた都市パラモを発見し、いまだかつてないバトルグラウンズにチャレンジしましょう！"
+      }
+    },
+    "video": {
+      "title": ""
+    },
+    "item": {
+      "title": "新たな高みを目指し",
+      "type_a": "タイプA",
+      "type_b": "タイプB",
+      "type_c": "タイプC",
+      "merc_team_uniform": "Merc Team ユニフォーム",
+      "merc_team_pants": "Merc Team パンツ",
+      "merc_team_gloves": "Merc Team グローブ",
+      "merc_team_shoes": "Tourist Trap シューズ",
+      "tribal_raptor_sks": "Tribal Raptor - SKS",
+      "mals_night_ops_suit": "Mal のナイトスーツ",
+      "console_exclusive": "Console限定",
+      "console_exclusive_items": "Console限定アイテム",
+      "tribal_glyph_winter_hat": "Tribal Glyph ウィンターハット",
+      "tribal_glyph_hoodie": "Tribal Glyph パーカー",
+      "tribal_glyph_pants": "Tribal Glyph パンツ",
+      "tribal_glyph_boots": "Tribal Glyph ブーツ"
+    },
+    "character": {
+      "title": "勝利を掴み取れ！"
+    },
+    "map": {
+      "title": "PARAMOの限りない可能性を発見しよう"
+    },
+    "banner": {
+      "title": "Available At"
+    }
+  }
+}

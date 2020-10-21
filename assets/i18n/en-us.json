@@ -1,4 +1,5 @@
 {
+  "title": "Survivor Pass: Highlands",
   "menu": {
     "news": {
       "title": "News"
@@ -58,9 +59,19 @@
     },
     "esports": {
       "title": "esports"
+    },
+    "guide": {
+      "title": "Survivor guide"
+    },
+    "update": {
+      "title": "Updates"
     }
   }, 
-  "login": "Login",
+  "account" : {
+    "login": "Login",
+    "logout": "Logout",
+    "myaccount": "My Account"
+  },
   "buynow": {
     "title": "Buy Now",
     "steam": {
@@ -81,7 +92,7 @@
   }, 
   "footer": {
     "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
-    "partner": "Partnership Inquiry",
+    "inquiry": "Partnership Inquiry",
     "inquiry_email": "PUBG_Partnership@pubg.com",
     "privacy_policy": {
       "title": "Privacy Policy"
@@ -100,10 +111,10 @@
     }
   },
   "section": {
-    "0": {
-      "title": "Discover Paramo"
+    "main": {
+      "title": "Discover --Paramo--"
     },
-    "1": {
+    "season": {
       "title": "New Season 9",
       "paragraph": {
         "title": "G-Coin now live on PC",
@@ -111,25 +122,25 @@
         "detail_view": "Detail View"
       }
     },
-    "2": {
+    "season-description": {
       "title": "Survivor Pass: Highlands",
       "paragraph": {
         "description": "Season 9 is here with an all new Survivor Pass! This shortened pass lasts for only 2 months, but also has a lower requirement of Level 50, letting you unlock all its great rewards faster! With the new Season comes a brand new seasonal map. Paramo lies surrounded by clouds in the highlands of a forgotten civilization, and comes with exciting new gameplay features such as Supply Helicopters, the Critical Response Kit, and Molten Lava from a live volcano! Paramo also features dynamic terrain, where areas change from match to match, giving you a new experience each time you play! Grab the Survivor Pass, discover the lost city of Paramo, and take on the Battlegrounds like never before!"
       }
     },
-    "3": {
+    "video": {
       "title": ""
     },
-    "4": {
+    "item": {
       "title": "Discover New Heights"
     },
-    "5": {
+    "character": {
       "title": "And Claim Your Victory"
     },
-    "6": {
+    "map": {
       "title": "Discover the endless possibilities of Paramo"
     },
-    "7": {
+    "banner": {
       "title": "Available At"
     }
   },

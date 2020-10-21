@@ -1,0 +1,124 @@
+{
+  "title": "Набор PUBG - «Расплата»",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/en/news/?_ga=2.205354832.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "https://www.facebook.com/PUBG/",
+      "community_twitter": "https://www.twitter.com/PUBG",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_reddit": "https://www.reddit.com/r/PUBATTLEGROUNDS/",
+      "community_instagram": "https://www.instagram.com/pubg/",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/en/merch/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/en/support/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
+    },
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/privacy/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/terms-of-service/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "rules_conduct": "https://www.pubg.com/rules-of-conduct?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/player-created-content/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/eula?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787"
+    }
+  },
+  "menu": {
+    "news": "News",
+    "community": "Community",
+    "community_facebook": "Facebook",
+    "community_twitter": "Twitter",
+    "community_youtube": "Youtube",
+    "community_reddit": "Reddit",
+    "community_instagram": "Instagram",
+    "community_dev": "PUBG API",
+    "merchandise": "Merchandise",
+    "support": "Support",
+    "careers": "Careers",
+    "esports": "ESPORTS"
+  }, 
+  "account" : {
+    "login": "ВХОД",
+    "logout": "ВЫХОД",
+    "myaccount": "My Account"
+  },
+  "buynow": {
+    "title": "КУПИТЬ БИЛЕТ",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "inquiry": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": "Privacy Policy",
+    "terms_service": "Terms of Service",
+    "rules_conduct": "Rules of Conduct",
+    "eula": "EULA",
+    "player_created_content": "Player-created Content"
+  },
+  "section": {
+    "main": {
+      "title": "Отправляйтесь --в Парамо--"
+    },
+    "season": {
+      "title": "G-Coin теперь и на ПК",
+      "paragraph": {
+        "title": "Мы добавили валюту G-Coin на ПК, чтобы сделать внутриигровые покупки еще проще!",
+        "description": "Теперь покупки в магазине PUBG будут расходовать пополняемый баланс G-Coin вместо того, чтобы запрашивать перевод реальных денег за каждый предмет. Кроме того, за выполнение миссий в «Билете выжившего: Высокогорье» вы можете заработать G-Coin вплоть до суммы, эквивалентной 5 $. Это позволит вам самим выбирать себе награды в магазине PUBG. Узнать больше о переходе на G-Coin можно на сайте pubg.com."
+      },
+      "detail_view": "Подробнее",
+      "detail_view_link": "https://www.pubg.com/ru/2020/09/22/g-coin-announcement/"
+    },
+    "season-description": {
+      "title": "Билет выжившего: Высокогорье",
+      "paragraph": {
+        "description": "Встречайте 9-й сезон с новым «Билетом выжившего»! Этот укороченный билет действует всего 2 месяца, зато вы сможете разблокировать все его награды уже на 50-м уровне! С новым сезоном в игре появится и новая сезонная карта. Среди облаков на высокогорных просторах забытой цивилизации расположился город Парамо, вместе с которым вас ждут новые особенности, такие как вертолеты с припасами, набор экстренной помощи и извергающий лаву вулкан! Динамическая местность Парамо делает каждый новый матч непохожим на предыдущий — а значит, вас ждут новые впечатления каждую игру! Покупайте «Билет выжившего», высаживайтесь в затерянном городе Парамо и покоряйте поле боя, как никогда прежде!"
+      }
+    },
+    "video": {
+      "title": ""
+    },
+    "item": {
+      "title": "Покоряйте новые высоты",
+      "type_a": "Тип A",
+      "type_b": "Тип B",
+      "type_c": "Тип C",
+      "merc_team_uniform": "Форма наемников",
+      "merc_team_pants": "Штаны наемников",
+      "merc_team_gloves": "Перчатки наемников",
+      "merc_team_shoes": "Обувь наемников",
+      "tribal_raptor_sks": "«Хищник племени» — СКС",
+      "mals_night_ops_suit": "Костюм для ночных операций Мэл",
+      "console_exclusive": "Эксклюзив для консоли",
+      "console_exclusive_items": "Эксклюзивные предметы для консоли",
+      "tribal_glyph_winter_hat": "Зимняя шапка «Облик племени»",
+      "tribal_glyph_hoodie": "Худи «Облик племени»",
+      "tribal_glyph_pants": "Штаны «Облик племени»",
+      "tribal_glyph_boots": "Ботинки «Облик племени»"
+    },
+    "character": {
+      "title": "и одерживайте победы"
+    },
+    "map": {
+      "title": "Вас ждут бесконечные возможности Парамо"
+    },
+    "banner": {
+      "title": "Доступно с"
+    }
+  }
+}

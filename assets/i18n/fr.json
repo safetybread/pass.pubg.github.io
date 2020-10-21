@@ -1,66 +1,48 @@
 {
-  "menu": {
-    "news": {
-      "title": "ACTUALITÉS"
+  "title": "Survivor Pass: Highlands",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/fr/news/?_ga=2.180879335.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "https://www.facebook.com/PUBG/",
+      "community_twitter": "https://www.twitter.com/PUBG_FR",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_reddit": "https://www.reddit.com/r/PUBATTLEGROUNDS/",
+      "community_instagram": "https://www.instagram.com/pubg/",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/en/merch/?_ga=2.3652976.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/en/support/?_ga=2.3652976.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.3652976.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
     },
-    "community": {
-      "title": "COMMUNAUTÉ",
-      "submenu": {
-        "pubg_api": {
-          "title": "PUBG API"
-        },
-        "facebook": {
-          "title": "Facebook"
-        },
-        "facebook_group": {
-          "title": "Facebook Group"
-        },
-        "twitter": {
-          "title": "Twitter"
-        },
-        "youtube": {
-          "title": "Youtube"
-        },
-        "twitch": {
-          "title": "Twitch"
-        },
-        "reddit": {
-          "title": "Reddit"
-        },
-        "instagram": {
-          "title": "Instagram"
-        },
-        "discord": {
-          "title": "Discord"
-        },
-        "passport": {
-          "title": "Passport 8.2 Sweepstakes"
-        },
-        "naver_cafe": {
-          "title": "Naver Cafe"
-        },
-        "pubg_partner": {
-          "title": "PUBG PARTNER"
-        }
-      }
-    },
-    "season": {
-      "title": "SAISON 9"
-    },
-    "product": {
-      "title": "PRODUITS"
-    },
-    "support": {
-      "title": "ASSISTANCE"
-    },
-    "careers": {
-      "title": "EMPLOIS"
-    },
-    "esports": {
-      "title": "esports"
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/privacy/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/terms-of-service/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "rules_conduct": "https://www.pubg.com/rules-of-conduct?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/player-created-content/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/eula?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787"
     }
+  },
+  "menu": {
+    "news": "Actualités",
+    "community": "Communauté",
+    "community_facebook": "Facebook",
+    "community_twitter": "Twitter",
+    "community_youtube": "Youtube",
+    "community_reddit": "Reddit",
+    "community_instagram": "Instagram",
+    "community_dev": "PUBG API",
+    "merchandise": "Produits",
+    "support": "Assistance",
+    "careers": "Emplois",
+    "esports": "Esports"
   }, 
-  "login": "CONNEXION",
+  "account" : {
+    "login": "CONNEXION",
+    "logout": "Logout",
+    "myaccount": "My Account"
+  },
   "buynow": {
     "title": "ACHETER MAINTENANT",
     "steam": {
@@ -81,61 +63,62 @@
   }, 
   "footer": {
     "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
-    "partner": "Partnership Inquiry",
+    "inquiry": "Partnership Inquiry",
     "inquiry_email": "PUBG_Partnership@pubg.com",
-    "privacy_policy": {
-      "title": "Privacy Policy"
-    },
-    "terms_service": {
-      "title": "Terms of Service"
-    },
-    "rules_conduct": {
-      "title": "Rules of Conduct"
-    },
-    "eula": {
-      "title": "EULA"
-    },
-    "player_created_content": {
-      "title": "Player-created Content"
-    }
+    "privacy_policy": "Privacy Policy",
+    "terms_service": "Terms of Service",
+    "rules_conduct": "Rules of Conduct",
+    "eula": "EULA",
+    "player_created_content": "Player-created Content"
   },
   "section": {
-    "0": {
-      "title": "Découvrez Paramo"
+    "main": {
+      "title": "Découvrez --Paramo--"
     },
-    "1": {
-      "title": "New Season 9",
+    "season": {
+      "title": "G-Coin désormais disponibles sur PC",
       "paragraph": {
-        "title": "G-Coin désormais disponibles sur PC",
-        "description": "Nous venons de faciliter le processus d'achats au sein du jeu avec l'implémentation des G-Coin dans la version PC ! À partir de maintenant, le montant des achats effectués dans la boutique PUBG sera prélevé sur votre solde de portefeuille de G-Coin, évitant ainsi la nécessité d'une transaction bancaire pour chaque article. Mieux encore, vous pouvez gagner jusqu'à 5 $ de G-Coin en accomplissant des missions du Pass Survivant : Highlands. Il vous sera ainsi possible de choisir votre propre récompense via la boutique PUBG.",
-        "detail_view": "Plus de détails"
-      }
+        "title": "Nous venons de faciliter le processus d'achats au sein du jeu avec l'implémentation des G-Coin dans la version PC !",
+        "description": "À partir de maintenant, le montant des achats effectués dans la boutique PUBG sera prélevé sur votre solde de portefeuille de G-Coin, évitant ainsi la nécessité d'une transaction bancaire pour chaque article. Mieux encore, vous pouvez gagner jusqu'à 5 $ de G-Coin en accomplissant des missions du Pass Survivant : Highlands. Il vous sera ainsi possible de choisir votre propre récompense via la boutique PUBG. Pour de plus amples informations sur le passage aux G-Coin, rendez-vous sur pubg.com."
+      },
+      "detail_view": "Plus de détails",
+      "detail_view_link": "https://www.pubg.com/fr/2020/09/22/g-coin-announcement/"
     },
-    "2": {
+    "season-description": {
       "title": "Pass Survivant : Highlands",
       "paragraph": {
-        "description": "La saison 9 est arrivée avec un tout nouveau Pass Survivant ! Ce pass à la durée plus courte n'est valable que 2 mois, mais vous pouvez l'utiliser dès le niveau 50 et débloquer ainsi plus rapidement toutes ses superbes récompenses !"
+        "description": "La saison 9 est arrivée avec un tout nouveau Pass Survivant ! Ce pass à la durée plus courte n'est valable que 2 mois, mais vous pouvez l'utiliser dès le niveau 50 et débloquer ainsi plus rapidement toutes ses superbes récompenses ! Qui dit nouvelle saison dit nouvelle carte saisonnière ! Érigé à des hauteurs vertigineuses au cœur des nuages, Paramo est niché au sommet des highlands d'une civilisation oubliée. Vous y découvrirez de nouvelles fonctionnalités de gameplay, dont les hélicoptères de ravitaillement, le kit de réanimation et de la lave ardente jaillissant d'un volcan en activité ! Paramo propose également un relief dynamique, où les zones évoluent d'un match au suivant, vous offrant ainsi une nouvelle expérience chaque fois que vous jouez ! Munissez-vous du Pass Survivant, découvrez la cité perdue de Paramo et partez à l'assaut des champs de bataille comme jamais auparavant !"
       }
     },
-    "3": {
+    "video": {
       "title": ""
     },
-    "4": {
-      "title": "Découvrez de nouveaux sommets"
+    "item": {
+      "title": "Découvrez de nouveaux sommets",
+      "type_a": "Type A",
+      "type_b": "Type B",
+      "type_c": "Type C",
+      "merc_team_uniform": "Uniforme d’équipe de mercenaires",
+      "merc_team_pants": "Pantalon d’équipe de mercenaires",
+      "merc_team_gloves": "Gants d’équipe de mercenaires",
+      "merc_team_shoes": "Chaussures d’équipe de mercenaires",
+      "tribal_raptor_sks": "Raptor tribal - SKS",
+      "mals_night_ops_suit": "Combinaison d'opérations nocturnes de Mal",
+      "console_exclusive": "Exclusivité console",
+      "console_exclusive_items": "Objets exclusivités console",
+      "tribal_glyph_winter_hat": "Bonnet Glyphe tribal",
+      "tribal_glyph_hoodie": "Sweat à capuche Glyphe tribal",
+      "tribal_glyph_pants": "Pantalon Glyphe tribal",
+      "tribal_glyph_boots": "Bottes Glyphe tribal"
     },
-    "5": {
+    "character": {
       "title": "Et emparez-vous de la victoire"
     },
-    "6": {
+    "map": {
       "title": "Découvrez les possibilités infinies de Paramo"
     },
-    "7": {
+    "banner": {
       "title": "Disponible sur"
     }
-  },
-  "type_a": "Type A",
-  "type_b": "Type B",
-  "type_c": "Type C",
-  "console_exclusive": "Exclusivité console",
-  "console_exclusive_items": "Objets exclusivités console"
+  }
 }

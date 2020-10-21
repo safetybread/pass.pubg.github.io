@@ -1,66 +1,48 @@
 {
-  "menu": {
-    "news": {
-      "title": "News"
+  "title": "Survivor Pass: Highlands",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/en/news/?_ga=2.205354832.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "https://www.facebook.com/PUBG/",
+      "community_twitter": "https://www.twitter.com/PUBG",
+      "community_youtube": "https://www.youtube.com/pubg",
+      "community_reddit": "https://www.reddit.com/r/PUBATTLEGROUNDS/",
+      "community_instagram": "https://www.instagram.com/pubg/",
+      "community_dev": "https://developer.pubg.com/",
+      "merchandise": "https://www.pubg.com/en/merch/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://www.pubg.com/en/support/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "careers": "https://careers.pubg.com/?_ga=2.175570914.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://www.pubgesports.com/"
     },
-    "community": {
-      "title": "Community",
-      "submenu": {
-        "pubg_api": {
-          "title": "PUBG API"
-        },
-        "facebook": {
-          "title": "Facebook"
-        },
-        "facebook_group": {
-          "title": "Facebook Group"
-        },
-        "twitter": {
-          "title": "Twitter"
-        },
-        "youtube": {
-          "title": "Youtube"
-        },
-        "twitch": {
-          "title": "Twitch"
-        },
-        "reddit": {
-          "title": "Reddit"
-        },
-        "instagram": {
-          "title": "Instagram"
-        },
-        "discord": {
-          "title": "Discord"
-        },
-        "passport": {
-          "title": "Passport 8.2 Sweepstakes"
-        },
-        "naver_cafe": {
-          "title": "Naver Cafe"
-        },
-        "pubg_partner": {
-          "title": "PUBG PARTNER"
-        }
-      }
-    },
-    "season": {
-      "title": "Season 9"
-    },
-    "product": {
-      "title": "Product"
-    },
-    "support": {
-      "title": "Support"
-    },
-    "careers": {
-      "title": "Careers"
-    },
-    "esports": {
-      "title": "esports"
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/privacy/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/terms-of-service/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "rules_conduct": "https://www.pubg.com/rules-of-conduct?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/player-created-content/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/eula?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787"
     }
-  }, 
-  "login": "Login",
+  },
+  "menu": {
+    "news": "News",
+    "community": "Community",
+    "community_facebook": "Facebook",
+    "community_twitter": "Twitter",
+    "community_youtube": "Youtube",
+    "community_reddit": "Reddit",
+    "community_instagram": "Instagram",
+    "community_dev": "PUBG API",
+    "merchandise": "Merchandise",
+    "support": "Support",
+    "careers": "Careers",
+    "esports": "ESPORTS"
+  },
+  "account" : {
+    "login": "Login",
+    "logout": "Logout",
+    "myaccount": "My Account"
+  },
   "buynow": {
     "title": "Buy Now",
     "steam": {
@@ -81,61 +63,62 @@
   }, 
   "footer": {
     "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
-    "partner": "Partnership Inquiry",
+    "inquiry": "Partnership Inquiry",
     "inquiry_email": "PUBG_Partnership@pubg.com",
-    "privacy_policy": {
-      "title": "Privacy Policy"
-    },
-    "terms_service": {
-      "title": "Terms of Service"
-    },
-    "rules_conduct": {
-      "title": "Rules of Conduct"
-    },
-    "eula": {
-      "title": "EULA"
-    },
-    "player_created_content": {
-      "title": "Player-created Content"
-    }
+    "privacy_policy": "Privacy Policy",
+    "terms_service": "Terms of Service",
+    "rules_conduct": "Rules of Conduct",
+    "eula": "EULA",
+    "player_created_content": "Player-created Content"
   },
   "section": {
-    "0": {
-      "title": "Discover Paramo"
+    "main": {
+      "title": "Discover --Paramo--"
     },
-    "1": {
-      "title": "New Season 9",
+    "season": {
+      "title": "G-Coin now live on PC",
       "paragraph": {
-        "title": "G-Coin now live on PC",
-        "description": "We've just made in-game purchasing easier with the addition of G-Coin to PC! Starting now, purchases made in the PUBG store will pull from your refillable G-Coin wallet balance instead of requiring a cash transaction for each item. Even better, you can earn up to $5 worth of G-Coin by completing missions in Survivor Pass: Highlands, allowing you to choose your own reward from the PUBG Store. For more details on the switch to G-Coin, please visit pubg.com.",
-        "detail_view": "Detail View"
-      }
+        "title": "We've just made in-game purchasing easier with the addition of G-Coin to PC!",
+        "description": "Starting now, purchases made in the PUBG store will pull from your refillable G-Coin wallet balance instead of requiring a cash transaction for each item. Even better, you can earn up to $10 worth of G-Coin by completing missions in Survivor Pass: Highlands, allowing you to choose your own reward from the PUBG Store. For more details on the switch to G-Coin, please visit pubg.com."
+      },
+      "detail_view": "Detail View",
+      "detail_view_link": "https://www.pubg.com/en/2020/09/22/g-coin-announcement"
     },
-    "2": {
+    "season-description": {
       "title": "Survivor Pass: Highlands",
       "paragraph": {
         "description": "Season 9 is here with an all new Survivor Pass! This shortened pass lasts for only 2 months, but also has a lower requirement of Level 50, letting you unlock all its great rewards faster! With the new Season comes a brand new seasonal map. Paramo lies surrounded by clouds in the highlands of a forgotten civilization, and comes with exciting new gameplay features such as Supply Helicopters, the Critical Response Kit, and Molten Lava from a live volcano! Paramo also features dynamic terrain, where areas change from match to match, giving you a new experience each time you play! Grab the Survivor Pass, discover the lost city of Paramo, and take on the Battlegrounds like never before!"
       }
     },
-    "3": {
+    "video": {
       "title": ""
     },
-    "4": {
-      "title": "Discover New Heights"
+    "item": {
+      "title": "Discover New Heights",
+      "type_a": "Type A",
+      "type_b": "Type B",
+      "type_c": "Type C",
+      "merc_team_uniform": "Merc Team Uniform",
+      "merc_team_pants": "Merc Team Pants",
+      "merc_team_gloves": "Merc Team Gloves",
+      "merc_team_shoes": "Merc Team Shoes",
+      "tribal_raptor_sks": "Tribal Raptor - SKS",
+      "mals_night_ops_suit": "Mal's Night Ops Suit",
+      "console_exclusive": "Console Exclusive",
+      "console_exclusive_items": "Console Exclusive Items",
+      "tribal_glyph_winter_hat": "Tribal Glyph Winter Hat",
+      "tribal_glyph_hoodie": "Tribal Glyph Hoodie",
+      "tribal_glyph_pants": "Tribal Glyph Pants",
+      "tribal_glyph_boots": "Tribal Glyph Boots"
     },
-    "5": {
+    "character": {
       "title": "And Claim Your Victory"
     },
-    "6": {
+    "map": {
       "title": "Discover the endless possibilities of Paramo"
     },
-    "7": {
+    "banner": {
       "title": "Available At"
     }
-  },
-  "type_a": "Type A",
-  "type_b": "Type B",
-  "type_c": "Type C",
-  "console_exclusive": "Console Exclusive",
-  "console_exclusive_items": "Console Exclusive Items"
+  }
 }

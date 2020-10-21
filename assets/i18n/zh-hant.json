@@ -1,0 +1,118 @@
+{
+  "title": "Survivor Pass: Highlands",
+  "link": {
+    "header_logo": "https://www.pubg.com",
+    "menu": {
+      "news": "https://www.pubg.com/zh-hant/news/?_ga=2.205354832.1196962647.1602663787-1687039636.1602663787",
+      "community_facebook": "http://bit.ly/FBPUBGTW",
+      "community_youtube": "http://bit.ly/YouTubePUBGTW",
+      "community_twitch": "http://bit.ly/PMLtwitch",
+      "community_dev": "http://bit.ly/PUBGTWGROUP",
+      "merchandise": "https://www.pubg.com/zh-hant/merch/?_ga=2.206018771.1196962647.1602663787-1687039636.1602663787",
+      "support": "https://support.pubg.com/hc/zh-tw?_ga=2.217421654.1196962647.1602663787-1687039636.1602663787",
+      "esports": "https://pml.pubgesports.tw/"
+    },
+    "footer": {
+      "inquiry_email": "mailto:PUBG_Partnership@pubg.com",
+      "privacy_policy": "https://www.pubg.com/privacy/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "terms_service": "https://www.pubg.com/terms-of-service/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "rules_conduct": "https://www.pubg.com/rules-of-conduct?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "eula": "https://www.pubg.com/player-created-content/?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787",
+      "player_created_content": "https://www.pubg.com/eula?_ga=2.214357079.1196962647.1602663787-1687039636.1602663787"
+    }
+  },
+  "menu": {
+    "news": "更新與公告",
+    "community": "社群",
+    "community_facebook": "Facebook",
+    "community_youtube": "Youtube",
+    "community_twitch": "Twitch",
+    "community_dev": "PUBG 台灣官方社團",
+    "merchandise": "周邊",
+    "support": "客服中心",
+    "esports": "電競"
+  }, 
+  "account" : {
+    "login": "登入",
+    "logout": "登出",
+    "myaccount": "My Account"
+  },
+  "buynow": {
+    "title": "立即購買",
+    "steam": {
+      "title": "Steam"
+    },
+    "xbox": {
+      "title": "Xbox One"
+    },
+    "ps4": {
+      "title": "PS4"
+    },
+    "stadia": {
+      "title": "STADIA"
+    },
+    "kakao": {
+      "title": "Kakao"
+    }
+  }, 
+  "footer": {
+    "copyright": "COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. \nPLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.",
+    "inquiry": "Partnership Inquiry",
+    "inquiry_email": "PUBG_Partnership@pubg.com",
+    "privacy_policy": "Privacy Policy",
+    "terms_service": "Terms of Service",
+    "rules_conduct": "Rules of Conduct",
+    "eula": "EULA",
+    "player_created_content": "Player-created Content"
+  },
+  "section": {
+    "main": {
+      "title": "探索 --Paramo--"
+    },
+    "season": {
+      "title": "G-Coin 現已開放在電腦版使用",
+      "paragraph": {
+        "title": "我們為電腦版加入了 G-Coin，未來在遊戲內進行購買更方便了！",
+        "description": "從現在開始，您在 PUBG 商店進行的消費將會從可儲值的 G-Coin 錢包餘額扣除費用，而不需要每項物品都使用現金交易。更棒的是，完成「生存通行證：炙熱巔峰」中的任務可讓您獲得最高價值 $10 美元的 G-Coin，可用於在 PUBG 商店中選擇自己想要的獎勵。如欲了解支付方式轉換為 G-Coin 的詳情，請前往 pubg.com。"
+      },
+      "detail_view": "查看詳情",
+      "detail_view_link": "https://www.pubg.com/zh_TW/2020/09/22/g-coin-announcement/"
+    },
+    "season-description": {
+      "title": "生存通行證：炙熱巔峰",
+      "paragraph": {
+        "description": "生存賽季 9 來了，還帶來全新生存通行證！這次的通行證時長縮短為 2 個月，但相對地總共等級 50 也更容易完成，讓您更快解鎖所有豐厚獎勵！ 新的生存賽季就是要配上全新的賽季地圖。Paramo 坐落在四周雲霧繚繞的高地，那裡是一個遭人遺忘的文明所在，此地圖還將帶來刺激有趣的新遊戲功能，例如補給直升機、緊急救援套件以及從活火山噴湧而出的熔岩！Paramo 還具有動態地形，每場對戰中的區域都會有所變化，讓您每次玩遊戲時都能獲得新的體驗！ 取得生存通行證、探索失落之城 Paramo，並以前所未有的方式進入戰場吧！"
+      }
+    },
+    "video": {
+      "title": ""
+    },
+    "item": {
+      "title": "探索新高地",
+      "type_a": "類型 A",
+      "type_b": "類型 B",
+      "type_c": "類型 C",
+      "merc_team_uniform": "專業團隊制服",
+      "merc_team_pants": "專業團隊長褲",
+      "merc_team_gloves": "專業團隊手套",
+      "merc_team_shoes": "專業團隊鞋",
+      "tribal_raptor_sks": "部落猛禽 - SKS",
+      "mals_night_ops_suit": "Mal 的夜間行動套裝",
+      "console_exclusive": "遊戲主機限定",
+      "console_exclusive_items": "遊戲主機限定物品",
+      "tribal_glyph_winter_hat": "部落雕紋冬帽",
+      "tribal_glyph_hoodie": "部落雕紋連帽外套",
+      "tribal_glyph_pants": "部落雕紋褲",
+      "tribal_glyph_boots": "部落雕紋靴"
+    },
+    "character": {
+      "title": "並贏得勝利"
+    },
+    "map": {
+      "title": "探索 Paramo 的無限可能"
+    },
+    "banner": {
+      "title": "Available At"
+    }
+  }
+}
